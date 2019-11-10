@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/placeholder.svg" alt="PINK">
+      </a>
+      <button class="page-header__menu-button">
+        <img class="page-header__menu-open" src="img/placeholder.svg">
+        <img class="page-header__menu-close visually-hidden" src="img/placeholder.svg">
+      </button>
+      <ul class="page-header__menu visually-hidden">
+        <li class="page-header__menu-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="form">Конкурс</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="page-main">
+      <section class="page-identifier">
+        <h2 class="page-identifier__page-name">Фотографии пользователей</h2>
+      </section>
+      <section class="manipulative-text">
+        <p class="manipulative-text__text-content">Взгляните на фотографии, который выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </section>
+
+      <section class="featured">
+
+        <div class="featured-block">
+          <div class="featured-block__image-container featured-block__image-container--panoramic
+          featured-block__image-container--panorame-of-the-day">
+            <p class="featured-block__panorame-of-the-day-plaque visually-hidden">Панорама дня</p>
+            <!-- чтобы можно было вставлять панорамы и ниже в ленте рекомендаций делаем вот так и убираем visually hidden
+            по селектору .featured-block__image-container--panorame-of-the-day .featured-block__panorame-of-the-day-plaque-->
+            <img class="featured-block__image" src="img/placeholder.svg">
+          </div>
+          <blockquote class="featured-block__featured-text">
+            <cite class="featured-block__authors-name">
+              Анна
+            </cite>
+            <span class="featured-block__time-since-posted">5 минут назад</span>
+            <p class="featured-block__authors-commentary">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
+          </blockquote>
+          <p class="featured-block__likes">
+            <button class="featured-block__likes-button featured-block__likes-button--not-pressed">
+              <img class="featured-block__likes-icon" src="img/placeholder.svg">
+            </button>
+            <span class="featured-block__likes-text">Нравится:</span>
+            <span class="featured-block__likes-number">215</span>
+          </p>
+        </div>
+
+        <div class="featured-block">
+          <div class="featured-block__image-container">
+            <p class="featured-block__panorame-of-the-day-plaque visually-hidden">Панорама дня</p>
+            <!-- чтобы можно было вставлять панорамы и ниже в ленте рекомендаций делаем вот так и убираем visually hidden
+            по селектору .featured-block__image-container--panorame-of-the-day .featured-block__panorame-of-the-day-plaque-->
+            <img class="featured-block__image" src="img/placeholder.svg">
+          </div>
+          <blockquote class="featured-block__featured-text">
+            <cite class="featured-block__authors-name">
+              Левон
+            </cite>
+            <span class="featured-block__time-since-posted">5 часов назад</span>
+            <p class="featured-block__authors-commentary">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          </blockquote>
+          <p class="featured-block__likes">
+            <button class="featured-block__likes-button featured-block__likes-button--not-pressed">
+              <img class="featured-block__likes-icon" src="img/placeholder.svg">
+            </button>
+            <span class="featured-block__likes-text">Нравится:</span>
+            <span class="featured-block__likes-number">356</span>
+          </p>
+        </div>
+
+        <div class="featured-block">
+            <div class="featured-block__image-container">
+              <p class="featured-block__panorame-of-the-day-plaque visually-hidden">Панорама дня</p>
+              <!-- чтобы можно было вставлять панорамы и ниже в ленте рекомендаций делаем вот так и убираем visually hidden
+              по селектору .featured-block__image-container--panorame-of-the-day .featured-block__panorame-of-the-day-plaque-->
+              <img class="featured-block__image" src="img/placeholder.svg">
+            </div>
+            <blockquote class="featured-block__featured-text">
+              <cite class="featured-block__authors-name">
+                Антон
+              </cite>
+              <span class="featured-block__time-since-posted">12 часов назад</span>
+              <p class="featured-block__authors-commentary">Соседи будут рады!</p>
+            </blockquote>
+            <p class="featured-block__likes">
+              <button class="featured-block__likes-button featured-block__likes-button--not-pressed">
+                <img class="featured-block__likes-icon" src="img/placeholder.svg">
+              </button>
+              <span class="featured-block__likes-text">Нравится:</span>
+              <span class="featured-block__likes-number">666</span>
+            </p>
+          </div>
+
+          <div class="featured-block">
+              <div class="featured-block__image-container">
+                <p class="featured-block__panorame-of-the-day-plaque visually-hidden">Панорама дня</p>
+                <!-- чтобы можно было вставлять панорамы и ниже в ленте рекомендаций делаем вот так и убираем visually hidden
+                по селектору .featured-block__image-container--panorame-of-the-day .featured-block__panorame-of-the-day-plaque-->
+                <img class="featured-block__image" src="img/placeholder.svg">
+              </div>
+              <blockquote class="featured-block__featured-text">
+                <cite class="featured-block__authors-name">
+                  Борис
+                </cite>
+                <span class="featured-block__time-since-posted">20 часов назад</span>
+                <p class="featured-block__authors-commentary">Здесь могла быть ваша цитата о великом и вечном.</p>
+              </blockquote>
+              <p class="featured-block__likes">
+                <button class="featured-block__likes-button featured-block__likes-button--not-pressed">
+                  <img class="featured-block__likes-icon" src="img/placeholder.svg">
+                </button>
+                <span class="featured-block__likes-text">Нравится:</span>
+                <span class="featured-block__likes-number">215</span>
+              </p>
+            </div>
+
+            <div class="featured-block">
+                <div class="featured-block__image-container">
+                  <p class="featured-block__panorame-of-the-day-plaque visually-hidden">Панорама дня</p>
+                  <!-- чтобы можно было вставлять панорамы и ниже в ленте рекомендаций делаем вот так и убираем visually hidden
+                  по селектору .featured-block__image-container--panorame-of-the-day .featured-block__panorame-of-the-day-plaque-->
+                  <img class="featured-block__image" src="img/placeholder.svg">
+                </div>
+                <blockquote class="featured-block__featured-text">
+                  <cite class="featured-block__authors-name">
+                    Сергей
+                  </cite>
+                  <span class="featured-block__time-since-posted">25 часов назад</span>
+                  <p class="featured-block__authors-commentary">Самая кубанская в мире!</p>
+                </blockquote>
+                <p class="featured-block__likes">
+                  <button class="featured-block__likes-button featured-block__likes-button--not-pressed">
+                    <img class="featured-block__likes-icon" src="img/placeholder.svg">
+                  </button>
+                  <span class="featured-block__likes-text">Нравится:</span>
+                  <span class="featured-block__likes-number">4</span>
+                </p>
+              </div>
+
+              <div class="featured-block">
+                  <div class="featured-block__image-container">
+                    <p class="featured-block__panorame-of-the-day-plaque visually-hidden">Панорама дня</p>
+                    <!-- чтобы можно было вставлять панорамы и ниже в ленте рекомендаций делаем вот так и убираем visually hidden
+                    по селектору .featured-block__image-container--panorame-of-the-day .featured-block__panorame-of-the-day-plaque-->
+                    <img class="featured-block__image" src="img/placeholder.svg">
+                  </div>
+                  <blockquote class="featured-block__featured-text">
+                    <cite class="featured-block__authors-name">
+                      Максим
+                    </cite>
+                    <span class="featured-block__time-since-posted">40 часов назад</span>
+                    <p class="featured-block__authors-commentary">А где снег-то?</p>
+                  </blockquote>
+                  <p class="featured-block__likes">
+                    <button class="featured-block__likes-button featured-block__likes-button--not-pressed">
+                      <img class="featured-block__likes-icon" src="img/placeholder.svg">
+                    </button>
+                    <span class="featured-block__likes-text">Нравится:</span>
+                    <span class="featured-block__likes-number">150</span>
+                  </p>
+                </div>
+
+                <div class="featured-block">
+                    <div class="featured-block__image-container">
+                      <p class="featured-block__panorame-of-the-day-plaque visually-hidden">Панорама дня</p>
+                      <!-- чтобы можно было вставлять панорамы и ниже в ленте рекомендаций делаем вот так и убираем visually hidden
+                      по селектору .featured-block__image-container--panorame-of-the-day .featured-block__panorame-of-the-day-plaque-->
+                      <img class="featured-block__image" src="img/placeholder.svg">
+                    </div>
+                    <blockquote class="featured-block__featured-text">
+                      <cite class="featured-block__authors-name">
+                        Надежда
+                      </cite>
+                      <span class="featured-block__time-since-posted">45 часов назад</span>
+                      <p class="featured-block__authors-commentary">Всем GM и взаимные лайки</p>
+                    </blockquote>
+                    <p class="featured-block__likes">
+                      <button class="featured-block__likes-button featured-block__likes-button--not-pressed">
+                        <img class="featured-block__likes-icon" src="img/placeholder.svg">
+                      </button>
+                      <span class="featured-block__likes-text">Нравится:</span>
+                      <span class="featured-block__likes-number">2560</span>
+                    </p>
+                  </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <img class="page-footer__logo" src="img/placeholder.svg">
+      <ul class="page-footer__social-links">
+        <li class="page-footer__link-container">
+          <a class="page-footer__link" href="https://twitter.com/pink">
+            <img class="page-footer__link-logo" src="img/placeholder.svg">
+          </a>
+        </li>
+        <li class="page-footer__link-container">
+          <a class="page-footer__link" href="https://www.facebook.com/pink">
+            <img class="page-footer__link-logo" src="img/placeholder.svg">
+          </a>
+        </li>
+        <li class="page-footer__link-container">
+          <a class="page-footer__link" href="https://www.youtube.com/channel/UCo1pShh6dtg">
+            <img class="page-footer__link-logo" src="img/placeholder.svg">
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__signature">
+        <span class="page-footer__signatuer-text">Разработано</span>
+        <img class="page-footer__signature-logo" src="img/placeholder.svg">
+      </p>
+    </footer>
+
+  </body>
+</html>
