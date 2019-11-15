@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <style>
+      @import url("css/normalize.css");
+      @import url("css/style.css");
+    </style>
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/placeholder.svg" alt="PINK">
-      </a>
-      <button class="page-header__menu-button"></button>
+      <div class="page-header__top-block">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/placeholder.svg" alt="PINK">
+        </a>
+        <button class="page-header__menu-button"></button>
+      </div>
       <ul class="page-header__menu page-header__menu--closed">
         <li class="page-header__menu-item">
           <a href="index.html">Главная</a>
@@ -19,7 +25,7 @@
           <a href="photo.html">Фотографии</a>
         </li>
         <li class="page-header__menu-item">
-          <a href="form">Конкурс</a>
+          <a href="form.html">Конкурс</a>
         </li>
         <li class="page-header__menu-item">
           <a href="#">HTML Academy</a>
@@ -33,7 +39,6 @@
         <img class="attention-grabber__phone-image" src="img/placeholder.svg">
       </div>
       <section class="download-links">
-        <img class="download-links__text-frame" src="img/placeholder.svg">
         <a class="download-links__signal-text"  href="#">Скачать приложение</a>
         <ul class="download-links__os-links">
           <li class="download-links__apple-link">
