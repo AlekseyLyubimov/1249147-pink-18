@@ -1,6 +1,9 @@
 .page-header {
-  background-color: #293646;
+  @header-background-color: #293646;
+  background-color: @header-background-color;
   width: 320px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .page-header__top-block {
@@ -9,7 +12,7 @@
 }
 
 .page-header__menu-button {
-  background-color: #293646;
+  background-color: @header-background-color;
   background-image: url("../img/icon-menu-burger.svg");
   background-repeat: no-repeat;
   border: 0;
@@ -29,12 +32,13 @@
   height: 64px;
   border-bottom: 1px solid #000407;
   border-top: 1px solid #4a555b;
+  padding-top: 20px;
 }
 
-.page-header__menu-item a {
+.page-header__menu-item {
   font-family: "OpenSansBold", Arial, sans-serif;
-  font-size: 18px;
-  color: #ffffff;
+  font-size: @font-size-bigger;
+  color: @text-color-light;
   text-decoration: none;
   text-transform: uppercase;
 }
