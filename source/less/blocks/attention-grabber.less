@@ -2,19 +2,50 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  box-sizing: border-box;
   height: 170px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10px;
+  margin-top: -66px;
+  padding-top: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    width: auto;
+    margin-top: -110px;
+    padding-top: 120px;
+  }
 }
 
 .attention-grabber--index {
-  height: 395px;
+  height: 462px;
+  @media (min-width: @tablet-width) {
+    height: 729px;
+  }
 }
 
 .attention-grabber__pitch-text {
   font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: @font-size-double;
   color: @text-color-light;
+  align-self: center;
   text-align: center;
+  width: 280px;
+}
+
+.attention-grabber__phone-image {
+  align-self: flex-start;
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+
+@media (min-width: @desktop-width) {
+
 }

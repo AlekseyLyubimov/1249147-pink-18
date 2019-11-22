@@ -1,11 +1,15 @@
 .download-links {
   background-color: @background-dark;
   box-sizing: border-box;
-  padding-top: 45px;
+  height: 270px;
+  padding-top: 30px;
   padding-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .download-links__signal-text {
@@ -13,16 +17,23 @@
   font-size: 18px;
   color: @background-light;
   text-decoration: none;
-  padding-top: 11px;
-  padding-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 15px;
   padding-left: 37px;
   padding-right: 37px;
   border: 3px solid @background-light;
   border-radius: 100px;
+  align-self: center;
 }
 
 .download-links__os-links {
   list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 35px;
 }
 
 .download-links__apple-link {
@@ -31,6 +42,8 @@
   background-position: center;
   height: 57px;
   width: 46px;
+  position: relative;
+  top: -5px;
 }
 
 .download-links__android-link {
@@ -55,6 +68,8 @@
   color: @text-color-light;
   letter-spacing: -0.04ch;
   line-height: 1.7;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 280px;
+  padding-top: 5px;
+  align-self: center;
+  text-align: center;
 }
