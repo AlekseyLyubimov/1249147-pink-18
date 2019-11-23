@@ -10,6 +10,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
+
+  @media (min-width: @tablet-width) {
+    background-color: #00000000;
+    float: left;
+    margin-top: -380px;
+    padding-left: 20px;
+    padding-bottom: 75px;
+    height: 380px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 130px;
+    margin-top: -435px;
+    height: 390px;
+  }
 }
 
 .download-links__signal-text {
@@ -25,8 +40,17 @@
   border-radius: 100px;
   align-self: center;
 
+  @media (min-width: @tablet-width) {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 21px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 11px;
+    padding-bottom: 13px;
   }
 }
 
@@ -38,6 +62,17 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 45px;
+    padding-right: 30px;
+  }
 }
 
 .download-links__apple-link {
@@ -48,6 +83,14 @@
   width: 46px;
   position: relative;
   top: -5px;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -5px;
+  }
 }
 
 .download-links__android-link {
@@ -76,4 +119,22 @@
   padding-top: 5px;
   align-self: center;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 1.4;
+    width: 300px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-family: "OpenSansLight", "Arial", sans-serif;
+    font-size: @font-size-bigger;
+    letter-spacing: -0.02ch;
+    padding-top: 25px;
+    margin-bottom: 5px;
+    line-height: 1.3;
+  }
 }
