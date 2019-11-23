@@ -14,7 +14,7 @@
 
 .download-links__signal-text {
   font-family: "OpenSansBold", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: @font-size-bigger;
   color: @background-light;
   text-decoration: none;
   padding-top: 13px;
@@ -24,6 +24,10 @@
   border: 3px solid @background-light;
   border-radius: 100px;
   align-self: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .download-links__os-links {

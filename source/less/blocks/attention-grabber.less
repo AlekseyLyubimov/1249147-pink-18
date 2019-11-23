@@ -23,8 +23,13 @@
 
 .attention-grabber--index {
   height: 462px;
+
   @media (min-width: @tablet-width) {
     height: 729px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 853px;
   }
 }
 
@@ -35,6 +40,14 @@
   align-self: center;
   text-align: center;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .attention-grabber__phone-image {
