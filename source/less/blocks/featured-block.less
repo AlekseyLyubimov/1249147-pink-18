@@ -1,14 +1,25 @@
 .featured-block {
   box-sizing: border-box;
+  width: 280px;
   background-color: @background-tinted;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
   text-align: left;
-  padding-left: 18px;
-  padding-right: 18px;
   padding-bottom: 10px;
 }
+
+.featured-block__image-container--panoramic .featured-block__image {
+  position: relative;
+  left: -20px;
+}
+
+.featured-block__featured-text {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
 
 .featured-block__authors-name {
   font-family: "OpenSansBold", "Arial", sans-serif;
@@ -22,9 +33,18 @@
   text-transform: uppercase;
 }
 
+.featured-block__likes {
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
 .featured-block__authors-commentary {
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: @font-size-normal;
+  line-height: 3ch;
+  letter-spacing: -0.04ch;
+  margin-top: 4px;
+  width: 230px;
 }
 
 .featured-block__likes-button {
