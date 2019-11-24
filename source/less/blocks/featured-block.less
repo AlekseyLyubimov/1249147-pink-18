@@ -7,19 +7,75 @@
   margin-bottom: 20px;
   text-align: left;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    height: 455px;
+    width: 300px;
+    margin-right: 0;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    height: 555px;
+    margin-bottom: 55px;
+  }
+
+}
+
+.featured-block__image-container {
+  @media (min-width: @tablet-width) {
+    height: 300px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
+}
+
+/* удалить после вставки картинок каждой версии */
+.featured-block__image {
+  @media (min-width: @tablet-width) {
+    height: 300px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
 }
 
 .featured-block__image-container--panoramic .featured-block__image {
-  position: relative;
-  left: -20px;
+    position: relative;
+    left: -20px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    left: -130px;
+  }
 }
 
 .featured-block__featured-text {
   margin-top: 20px;
   margin-left: 18px;
   margin-bottom: 10px;
-}
 
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 10px;
+    top: 308px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 408px;
+  }
+}
 
 .featured-block__authors-name {
   font-family: "OpenSansBold", "Arial", sans-serif;
@@ -33,11 +89,6 @@
   text-transform: uppercase;
 }
 
-.featured-block__likes {
-  margin-bottom: 12px;
-  margin-top: 10px;
-}
-
 .featured-block__authors-commentary {
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: @font-size-normal;
@@ -47,6 +98,17 @@
   width: 230px;
 }
 
+.featured-block__likes {
+  margin-bottom: 12px;
+  margin-top: 0px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 26px;
+    bottom: 15px;
+  }
+}
+
 .featured-block__likes-button {
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
@@ -54,6 +116,14 @@
   text-align: center;
   height: 18px;
   width: 18px;
+  margin-left: 18px;
+  margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 210px;
+    bottom: -5px;
+  }
 }
 
 .featured-block__likes-text {
@@ -72,4 +142,18 @@
 
 .featured-block:last-child {
   margin-bottom: 1px;
+}
+
+.featured-block:first-child {
+  @media (min-width: @tablet-width) {
+    height: 630px;
+    width: 620px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 605px;
+    width: 940px;
+    margin-bottom: 45px;
+  }
 }
