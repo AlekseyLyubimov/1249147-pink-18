@@ -2,6 +2,7 @@
   background-color: @background-dark;
   box-sizing: border-box;
   height: 270px;
+  width: 320px;
   padding-top: 30px;
   padding-bottom: 25px;
   margin-left: auto;
@@ -15,8 +16,9 @@
     background-color: #00000000;
     position: absolute;
     top: 350px;
-    margin-left: auto;
-    margin-right: auto;
+    left: 50%;
+    margin-left: -330px;
+    margin-right: 0;
     padding-right: 320px;
     width: 660px;
     height: 330px;
@@ -26,12 +28,15 @@
     top: 418px;
     padding-right: 640px;
     height: 340px;
+    width: 960px;
+    margin-left: -480px;
   }
 }
 
 .download-links__signal-text {
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: @font-size-bigger;
+  letter-spacing: 0.12ch;
   color: @background-light;
   text-decoration: none;
   padding-top: 13px;
@@ -49,6 +54,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
+    letter-spacing: 0ch;
     padding-left: 29px;
     padding-right: 29px;
     padding-top: 11px;
@@ -61,9 +67,9 @@
   margin: 0;
   display: flex;
   justify-content: space-around;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 35px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 45px;
 
   @media (min-width: @tablet-width) {
     padding-left: 50px;
@@ -73,8 +79,8 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 45px;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -82,8 +88,8 @@
   background-image: url("../img/logo-apple.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 57px;
-  width: 46px;
+  height: 60px;
+  width: 50px;
   position: relative;
   top: -5px;
 
@@ -100,16 +106,16 @@
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 57px;
-  width: 46px;
+  height: 60px;
+  width: 50px;
 }
 
 .download-links__windows-link {
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 57px;
-  width: 46px;
+  height: 60px;
+  width: 50px;
 }
 
 .download-links__clarification-text {

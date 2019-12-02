@@ -38,6 +38,7 @@
     font-size: 50px;
     width: 800px;
     margin-top: 40px;
+    line-height: 2.2ch;
   }
 }
 
@@ -66,23 +67,39 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 45px;
     flex-direction: row;
+    justify-content: center;
   }
 
 }
 
 .feature-block__feature {
+
+width: 320px;
+
   @media (min-width: @tablet-width) {
+    box-sizing: border-box;
     width: 295px;
     align-self: flex-end;
+    padding-left: 330px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: content-box;
+    align-self: flex-start;
+    width: 240px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 .feature-block__feature-name {
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: @font-size-bigger;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 20px;
   color: @text-color-dark;
-  line-height: 0.8;
+  line-height: 0.75;
   align-self: center;
   text-align: center;
 
@@ -92,12 +109,15 @@
 
   @media (min-width: @desktop-width) {
     text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.12ch;
+    line-height: 1;
   }
 }
 
 .feature-block__feature-text {
   font-family: "OpenSansLight", "Arial", sans-serif;
-  font-size: @font-size-normal;
+  font-size: 16px;
   letter-spacing: 0.04ch;
   color: @text-color-dark;
   line-height: 1.7;
@@ -107,11 +127,13 @@
 
   @media (min-width: @tablet-width) {
     text-align: left;
-    margin-bottom: 22px;
+    margin-bottom: 5px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
+    font-size: @font-size-bigger;
   }
 }
 
