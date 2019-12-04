@@ -17,8 +17,6 @@
   height: 170px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -66px;
-  padding-top: 66px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -26,14 +24,14 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
-    margin-top: -110px;
-    padding-top: 120px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
     box-sizing: border-box;
+    margin-top: -110px;
+    padding-top: 120px;
   }
 }
 
@@ -71,17 +69,5 @@
   @media (min-width: @desktop-width) {
     font-size: 50px;
     padding-left: 20px;
-  }
-}
-
-.attention-grabber__phone-image {
-  align-self: flex-start;
-
-  @media (min-width: @tablet-width) {
-    align-self: flex-end;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-right: 30px;
   }
 }
