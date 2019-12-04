@@ -1,52 +1,121 @@
 .download-links {
   background-color: @background-dark;
   box-sizing: border-box;
-  padding-top: 45px;
+  height: 270px;
+  width: 320px;
+  padding-top: 30px;
   padding-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+
+  @media (min-width: @tablet-width) {
+    background-color: #00000000;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    margin-left: -330px;
+    margin-right: 0;
+    padding-right: 320px;
+    width: 660px;
+    height: 330px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 418px;
+    padding-right: 640px;
+    height: 340px;
+    width: 960px;
+    margin-left: -480px;
+  }
 }
 
 .download-links__signal-text {
   font-family: "OpenSansBold", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: @font-size-bigger;
+  letter-spacing: 0.12ch;
   color: @background-light;
   text-decoration: none;
-  padding-top: 11px;
-  padding-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 15px;
   padding-left: 37px;
   padding-right: 37px;
   border: 3px solid @background-light;
   border-radius: 100px;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    letter-spacing: 0ch;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 11px;
+    padding-bottom: 13px;
+  }
 }
 
 .download-links__os-links {
   list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .download-links__apple-link {
   background-image: url("../img/logo-apple.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 57px;
-  width: 46px;
+  height: 60px;
+  width: 50px;
+  position: relative;
+  top: -5px;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -5px;
+  }
 }
 
 .download-links__android-link {
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 57px;
-  width: 46px;
+  height: 60px;
+  width: 50px;
 }
 
 .download-links__windows-link {
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 57px;
-  width: 46px;
+  height: 60px;
+  width: 50px;
 }
 
 .download-links__clarification-text {
@@ -55,6 +124,26 @@
   color: @text-color-light;
   letter-spacing: -0.04ch;
   line-height: 1.7;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 280px;
+  padding-top: 5px;
+  align-self: center;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 1.4;
+    width: 300px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-family: "OpenSansLight", "Arial", sans-serif;
+    font-size: @font-size-bigger;
+    letter-spacing: -0.02ch;
+    padding-top: 25px;
+    margin-bottom: 5px;
+    line-height: 1.3;
+  }
 }

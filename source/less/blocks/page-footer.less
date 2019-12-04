@@ -1,3 +1,8 @@
+.page-footer__background {
+  width: 100%;
+  background-color: #ffffff;
+}
+
 .page-footer {
   box-sizing: border-box;
   height: 285px;
@@ -7,12 +12,38 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    height: 127px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 3px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 230px;
+    padding-left: 130px;
+    padding-right: 113px;
+  }
 }
 
 .page-footer__social-links {
   list-style: none;
   margin-top: inherit;
   margin-bottom: inherit;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 178px;
+    position: relative;
+    right: 38px;
+    top: 5px;
+  }
 }
 
 .page-footer__link-container {
@@ -22,8 +53,24 @@
   width: 45px;
 }
 
-.page-footer__signatuer-text {
+.page-footer__signature {
+  @media (min-width: @tablet-width) {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 17px;
+  }
+}
+
+.page-footer__signature-text {
   font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: @font-size-normal;
   letter-spacing: 0.04ch;
+
+  @media (min-width: @tablet-width) {
+    letter-spacing: 0.08ch;
+    align-self: center;
+  }
 }

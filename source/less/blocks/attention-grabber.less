@@ -1,20 +1,73 @@
-.attention-grabber {
+.attention-grabber__background-image {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+}
+
+.attention-grabber {
+  box-sizing: content-box;
   height: 170px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    margin-top: -110px;
+    padding-top: 120px;
+  }
 }
 
 .attention-grabber--index {
-  height: 395px;
+  height: 398px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 733px;
+  }
 }
 
 .attention-grabber__pitch-text {
   font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: @font-size-double;
   color: @text-color-light;
+  align-self: center;
   text-align: center;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    width: 240px;
+    padding-left: 30px;
+    padding-top: 45px;
+    align-self: flex-start;
+    line-height: 1.2;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    padding-left: 20px;
+  }
 }
