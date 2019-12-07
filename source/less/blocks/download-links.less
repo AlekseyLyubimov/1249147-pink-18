@@ -3,7 +3,7 @@
   box-sizing: border-box;
   height: 270px;
   width: 320px;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -15,7 +15,7 @@
   @media (min-width: @tablet-width) {
     background-color: #00000000;
     position: absolute;
-    top: 350px;
+    top: 238px;
     left: 50%;
     margin-left: -330px;
     margin-right: 0;
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 418px;
+    top: 420px;
     padding-right: 640px;
     height: 340px;
     width: 960px;
@@ -34,53 +34,54 @@
 }
 
 .download-links__signal-text {
+  box-sizing: border-box;
+  width: 280px;
+  text-align: center;
+
   font-family: "OpenSansBold", "Arial", sans-serif;
-  font-size: @font-size-bigger;
-  letter-spacing: 0.12ch;
+  font-size: 16px;
+  letter-spacing: 0.14ch;
   color: @background-light;
   text-decoration: none;
-  padding-top: 13px;
-  padding-bottom: 15px;
-  padding-left: 37px;
-  padding-right: 37px;
+  padding-top: 12px;
+  padding-bottom: 14px;
   border: 3px solid @background-light;
   border-radius: 100px;
   align-self: center;
 
   @media (min-width: @tablet-width) {
-    padding-left: 47px;
-    padding-right: 47px;
+    width: 300px;
+    font-size: 18px;
+    letter-spacing: 0ch;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
     letter-spacing: 0ch;
-    padding-left: 29px;
-    padding-right: 29px;
-    padding-top: 11px;
+    padding-top: 9px;
     padding-bottom: 13px;
   }
 }
 
 .download-links__os-links {
+  box-sizing: border-box;
+  width: 280px;
+
   list-style-type: none;
   margin: 0;
   display: flex;
   justify-content: space-around;
-  padding-left: 28px;
-  padding-right: 28px;
-  padding-top: 45px;
+  padding-top: 35px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 240px;
+    padding: 0;
     padding-top: 10px;
+    align-self: center;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 45px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 }
 
@@ -125,13 +126,15 @@
   letter-spacing: -0.04ch;
   line-height: 1.7;
   width: 280px;
-  padding-top: 5px;
+  padding-top: 3px;
   align-self: center;
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    font-family: "OpenSansLight", "Arial", sans-serif;
     font-size: 18px;
     line-height: 1.4;
+    letter-spacing: 0ch;
     width: 300px;
     margin-top: 0;
     padding-top: 0;
@@ -139,9 +142,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    font-family: "OpenSansLight", "Arial", sans-serif;
     font-size: @font-size-bigger;
-    letter-spacing: -0.02ch;
     padding-top: 25px;
     margin-bottom: 5px;
     line-height: 1.3;
