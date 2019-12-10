@@ -4,6 +4,10 @@
   margin-left: auto;
   position:relative;
   z-index: 10;
+
+  @media (min-width: @desktop-width) {
+    background-color: #00000060;
+  }
 }
 
 .page-header__top-block {
@@ -26,6 +30,12 @@
 
 .page-header__logo {
   height: 23px;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    top: -15px;
+    left: -10px;
+  }
 }
 
 .page-header__menu-button {
@@ -72,9 +82,13 @@
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {
+    font-family: "OpenSansLight", "Arial", sans-serif;
+    text-transform: none;
+    letter-spacing: 0.04ch;
+
     border-bottom: none;
     border-top: none;
     background-color: #00000000;
-    margin-left: 60px;
+    margin-left: 80px;
   }
 }

@@ -67,18 +67,19 @@
 }
 
 .featured-block__image-container--panoramic .featured-block__image {
-    position: relative;
-    left: -20px;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+
+  height: 137px;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
-    left: 0;
+    height: 509px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
     height: 505px;
-    left: -10px;
   }
 }
 
@@ -187,9 +188,9 @@
 
 .featured-block:first-child .featured-block__likes {
   @media (min-width: @tablet-width) {
-    width: 200px;
-    left: 789px;
-    bottom: 40px;
+    width: 150px;
+    left: 472px;
+    bottom: 63px;
   }
 }
 
