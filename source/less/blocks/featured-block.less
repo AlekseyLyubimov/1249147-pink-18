@@ -66,6 +66,21 @@
 
 }
 
+.featured-block__image {
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
 .featured-block__image-container--panoramic .featured-block__image {
   width: 100vw;
   position: relative;
@@ -189,8 +204,8 @@
 .featured-block:first-child .featured-block__likes {
   @media (min-width: @tablet-width) {
     width: 150px;
-    left: 472px;
-    bottom: 63px;
+    left: 789px;
+    bottom: 40px;
   }
 }
 
