@@ -18,7 +18,6 @@
     height: 555px;
     margin-bottom: 55px;
   }
-
 }
 
 .featured-block:nth-child(2n+2) {
@@ -63,7 +62,21 @@
     height: 505px;
     margin-left: 0;
   }
+}
 
+.featured-block__image {
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .featured-block__image-container--panoramic .featured-block__image {
@@ -84,7 +97,7 @@
 }
 
 .featured-block__featured-text {
-  margin-top:15px;
+  margin-top: 15px;
   margin-left: 18px;
   margin-bottom: 0;
   margin-right: 18px;
@@ -112,7 +125,7 @@
 }
 
 .featured-block:first-child .featured-block__authors-commentary::after {
-  content: ' вопросы!'
+  content: " вопросы!";
 }
 
 .featured-block__authors-commentary {
@@ -124,13 +137,13 @@
   margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
-    letter-spacing: -0ch;
+    letter-spacing: 0;
   }
 }
 
 .featured-block__likes {
   margin-bottom: 12px;
-  margin-top: 0px;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -189,8 +202,8 @@
 .featured-block:first-child .featured-block__likes {
   @media (min-width: @tablet-width) {
     width: 150px;
-    left: 472px;
-    bottom: 63px;
+    left: 789px;
+    bottom: 40px;
   }
 }
 
