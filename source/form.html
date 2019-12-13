@@ -11,10 +11,10 @@
     <header class="page-header">
       <div class="page-header__top-block container">
         <a class="page-header__logo">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="PINK">
-            </picture>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="PINK">
+          </picture>
         </a>
         <button class="page-header__menu-button"></button>
       </div>
@@ -35,29 +35,99 @@
     </header>
 
     <main class="page-main">
+
       <div class="page-main__identifier-comtainer">
         <h2 class="page-main__page-identifier">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
+
+      <h2 class="page-main__contest-info">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
+
+      <form id="contest" action="handler.php" method="post"></form>
+
+      <div class="personal-info">
+        <label for="last-name">Фамилия:</label>
+        <p class="personal-info__input-field"><input type="text" name="last-name" form="contest" required placeholder="Укажите фамилию *"></p>
+        <label for="irst-name">Имя:</label>
+        <p class="personal-info__input-field"><input type="text" name="first-name" form="contest" required placeholder="Введите ваше имя *"></p>
+        <label for="middle-name">Отчество:</label>
+        <p class="personal-info__input-field"><input type="text" name="middle-name" form="contest" placeholder="Ну и отчество тоже"></p>
+      </div>
+
+      <div class="achievements">
+        <p class="achievements__info">Ваши безбашенные достижения в путешествии</p>
+        <div class="achievements__achievement">
+          <input type="checkbox" name="shark-selfie">
+          <label for="shark-selfie">Сделал селфи с акулой</label>
+        </div>
+        <div class="achievements__achievement">
+          <input type="checkbox" name="sunburn">
+          <label for="sunburn">Обгорел на пляже</label>
+        </div>
+        <div class="achievements__achievement">
+          <input type="checkbox" name="chuck-norris">
+          <label for="chuck-norris">Видел Чака Норриса</label>
+        </div>
+        <div class="achievements__achievement">
+          <input type="checkbox" name="souvenir-freighter">
+          <label for="souvenir-freighter">Накупил сувениров</label>
+        </div>
+        <div class="achievements__achievement">
+          <input type="checkbox" name="pisa-tower">
+          <label for="pisa-tower">Удержал башню</label>
+        </div>
+        <div class="achievements__achievement">
+          <input type="checkbox" name="hotel-thrasher">
+          <label for="hotel-thrasher">Разгромил отель</label>
+        </div>
+      </div>
+
+      <div class="user-contacts">
+        <label for="phone-number"> Номер телефона</label>
+        <p class="user-contacts__input-field"><input type="text" name="phone-number" form="contest" required placeholder="Номер, пожалуйста"></p>
+        <label for="email">Адрес почты</label>
+        <p class="user-contacts__input-field"><input type="email" name="email" form="contest" placeholder="Введите почту *"></p>
+      </div>
+
+      <div class="application-version">
+        <input type="radio" id="ios-app" name="appversion" value="ios">
+        <label for="ios-app">Pink для iOS</label>
+        <input type="radio" id="android-app" name="appversion" value="android">
+        <label for="android-app">Pink на Android</label>
+        <input type="radio" id="win-app" name="appversion" value="windows">
+        <label for="win-app">Windows Phone</label>
+      </div>
+
+      <div class="essay">
+        <label for="essay">Опишите свои эмоции</label>
+        <input  type="text" name="essay" form="contest" placeholder="Можно прям в красках, не стесняясь в выражениях">
+      </div>
+
+      <input class="page-main__submit-button" type="submit" value="ОТПРАВИТЬ ФОРМУ" form="contest">
+
+      <p class="page-main__mandatory-fields">* - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+
     </main>
 
-    <footer class="page-footer container">
-      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg">
-      <ul class="page-footer__social-links">
-        <li class="page-footer__link-container">
-          <a class="page-footer__link-twitter" href="https://twitter.com/pink"></a>
-        </li>
-        <li class="page-footer__link-container">
-          <a class="page-footer__link-facebook" href="https://www.facebook.com/pink"></a>
-        </li>
-        <li class="page-footer__link-container">
-          <a class="page-footer__link-youtube" href="https://www.youtube.com/channel/UCo1pShh6dtg"></a>
-        </li>
-      </ul>
-      <p class="page-footer__signature">
-        <span class="page-footer__signatuer-text">Разработано</span>
-        <img class="page-footer__signature-logo" src="img/logo-htmlacademy.svg">
-      </p>
-    </footer>
+    <div class="page-footer__background">
+      <footer class="page-footer container">
+        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg">
+        <ul class="page-footer__social-links">
+          <li class="page-footer__link-container">
+            <a class="page-footer__link-twitter" href="https://twitter.com/pink"></a>
+          </li>
+          <li class="page-footer__link-container">
+            <a class="page-footer__link-facebook" href="https://www.facebook.com/pink"></a>
+          </li>
+          <li class="page-footer__link-container">
+            <a class="page-footer__link-youtube" href="https://www.youtube.com/channel/UCo1pShh6dtg"></a>
+          </li>
+        </ul>
+        <p class="page-footer__signature">
+          <span class="page-footer__signature-text">Разработано</span>
+          <img class="page-footer__signature-logo" src="img/logo-htmlacademy.svg">
+        </p>
+      </footer>
+    </div>
 
   </body>
 </html>
