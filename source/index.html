@@ -77,7 +77,7 @@
         </ul>
       </section>
 
-      <section class="effect-time" style="display:none">
+      <section class="effect-time">
         <h2 class="effect-time__header">Эффект на 24 часа!</h2>>
         <p class="effect-time__text"></p>
         <li class="effect-time__link">
@@ -86,9 +86,9 @@
       </section>
 
       <section class="user-reviews">
-        <blockquote class="user-reviews__review user-reviews__review--petrov">
+        <blockquote class="user-reviews__review">
           <cite class="user-reviews__reviewer-name">Николай Петров</cite>
-          <p class="user-reviews__review-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          <p class="user-reviews__review-text"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
         </blockquote>
       </section>
 
@@ -103,43 +103,85 @@
           </tr>
 
           <tr class="tariffs__pink-filter">
-            <td class="tariffs__row-name">Розовый фильтр</td>
-            <td class="tariffs_yes-cell"></td>
-            <td class="tariffs_yes-cell"></td>
-            <td class="tariffs_yes-cell"></td>
+            <td class="tariffs__cell tariffs__cell--row-name">Розовый фильтр</td>
+            <td class="tariffs__cell">
+              <span class="tariffs__mobile-text">Розовый фильтр</span>
+            </td>
+            <td class="tariffs__cell">
+              <span class="tariffs__mobile-text">Розовый фильтр</span>
+            </td>
+            <td class="tariffs__cell">
+              <span class="tariffs__mobile-text">Розовый фильтр</span>
+            </td>
           </tr>
 
           <tr class="tariffs__emojis">
-            <td class="tariffs__row-name">Смайлики</td>
-            <td class="tariffs_no-cell"></td>
-            <td class="tariffs_yes-cell"></td>
-            <td class="tariffs_yes-cell"></td>
+            <td class="tariffs__cell tariffs__cell--row-name">Смайлики</td>
+            <td class="tariffs__cell">
+              <span class="tariffs__mobile-text">Смайлики</span>
+            </td>
+            <td class="tariffs__cell">
+              <span class="tariffs__mobile-text">Смайлики</span>
+            </td>
+            <td class="tariffs__cell">
+              <span class="tariffs__mobile-text">Смайлики</span>
+            </td>
           </tr>
 
           <tr class="tariffs__comments">
-            <td class="tariffs__row-name">Комментарии</td>
-            <td class="tariffs_no-cell"></td>
-            <td class="tariffs_no-cell"></td>
-            <td class="tariffs_yes-cell"></td>
+            <td class="tariffs__cell tariffs__cell--row-name">Комментарии</td>
+            <td class="tariffs__cell">
+              <span class="tariffs__mobile-text">Комментарии</span>
+            </td>
+            <td class="tariffs__cell">
+              <span class="tariffs__mobile-text">Комментарии</span>
+            </td>
+            <td class="tariffs__cell"></td>
+            <span class="tariffs__mobile-text">Комментарии</span>
           </tr>
 
         </table>
       </section>
 
       <section class="contacts">
-        <p class="contacts__clarification-text">Остались вопросы?<br>Свяжитесь с нами!</p>
-        <h2 class="contacts__contact-type">Звоните:</h2>
-        <p class="contacts__contact-data">+7 (812) 555-66-66</p>
-        <h2 class="contacts__contact-type">Пишите:</h2>
-        <p class="contacts__contact-data">mail@htmlacademy.ru</p>
-        <h2 class="contacts__contact-type">Приезжайте в гости:</h2>
-        <p class="contacts__contact-data">ул. БольшаяКонюшенная, 19/8</p>
-        <div class="contacts__left-bottom"></div>
-        <div class="contacts__right-bottom"></div>
+        <div class="contacts__container">
+          <p class="contacts__clarification-text">Остались вопросы?<br>Свяжитесь с нами!</p>
+          <div class="contacts__contact contacts__contact--call">
+            <h2 class="contacts__contact-type">Звоните:</h2>
+            <p class="contacts__contact-data">+7 (812) 555-66-66</p>
+          </div>
+          <div class="contacts__contact contacts__contact--write">
+            <h2 class="contacts__contact-type">Пишите:</h2>
+            <p class="contacts__contact-data">mail@htmlacademy.ru</p>
+          </div>
+          <div class="contacts__contact contacts__contact--come">
+            <h2 class="contacts__contact-type">Приезжайте в гости:</h2>
+            <p class="contacts__contact-data">ул. Большая<br>Конюшенная, 19/8</p>
+          </div>
+        </div>
       </section>
     </main>
 
-    <div class="map"></div>
+    <div class="page-footer__background page-footer--index">
+      <footer class="page-footer container">
+        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg">
+        <ul class="page-footer__social-links">
+          <li class="page-footer__link-container">
+            <a class="page-footer__link-twitter" href="https://twitter.com/pink"></a>
+          </li>
+          <li class="page-footer__link-container">
+            <a class="page-footer__link-facebook" href="https://www.facebook.com/pink"></a>
+          </li>
+          <li class="page-footer__link-container">
+            <a class="page-footer__link-youtube" href="https://www.youtube.com/channel/UCo1pShh6dtg"></a>
+          </li>
+        </ul>
+        <p class="page-footer__signature">
+          <span class="page-footer__signature-text">Разработано</span>
+          <img class="page-footer__signature-logo" src="img/logo-htmlacademy.svg">
+        </p>
+      </footer>
+    </div>
 
   </body>
 </html>

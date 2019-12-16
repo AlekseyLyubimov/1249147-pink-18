@@ -222,16 +222,28 @@
         </section>
       </div>
 
-      <section class="editor container">
-        <h2 class="editor__header">Затмите их всех!<br>Выкладывайте всё, что накопилось в телефоне!</h2>
-        <img class="editor__picture">
-        <div class="editor__icons">
-          <img class="editor__icon">
-          <img class="editor__icon">
-          <img class="editor__icon">
+      <div class="page-main__incentive-container">
+        <p class="page-main__incentive-text">Затмите их всех!<br>Выкладывайте всё, что накопилось в телефоне!</p>
+      </div>
+
+      <section class="editor">
+        <div class="editor__container">
+          <picture>
+            <source media="(min-width: 960px) and (min-resolution: 1.5dppx)" srcset="img/photo-road-desktop@2x.jpg">
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+            <source media="(min-width: 660px) and (min-resolution: 1.5dppx)" srcset="img/photo-road-tablet@2x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+            <source media="(min-resolution: 1.5dppx)" srcset="img/photo-road-mobile@2x.jpg">
+            <img  class="editor__picture" src="img/photo-road-mobile@1x.jpg">
+          </picture>
+          <div class="editor__icons">
+            <img class="editor__icon editor__icon--crop" src="img/icon-editor-crop.svg">
+            <img class="editor__icon editor__icon--fill" src="img/icon-editor-fill.svg">
+            <img class="editor__icon editor__icon--contrast" src="img/icon-editor-contrast.svg">
+          </div>
+          <button class="editor__post-button">Запостить</button>
+          <button class="editor__cansel-button">Отмена</button>
         </div>
-        <button class="editor__post-button">Запостить</button>
-        <button class="editor__cansel-button">Отмена</button>
       </section>
 
     </main>

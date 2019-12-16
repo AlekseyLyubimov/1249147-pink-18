@@ -1,0 +1,63 @@
+.user-contacts {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: @background-light;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.user-contacts__fieldset {
+  box-sizing: border-box;
+  height: 288px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0;
+  border: none;
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    height: 160px;
+    position: relative;
+  }
+}
+
+.user-contacts__contact {
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    width: 375px;
+    margin-left: 74px;
+  }
+}
+
+.user-contacts__label {
+  display: block;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: @font-size-normal;
+  color: @text-color-likes;
+  text-transform: uppercase;
+}
+
+.user-contacts__input-field {
+  box-sizing: border-box;
+  height: 60px;
+  width: 100%;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: @font-size-bigger;
+  color: @text-color-dark;
+
+  @media (min-width: @desktop-width) {
+    width: 375px;
+  }
+}
