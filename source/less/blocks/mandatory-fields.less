@@ -12,9 +12,26 @@
   color: @text-color-dark;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    width: 500px;
+    margin-left: 50vw;
+
+    position: relative;
+    bottom: 112px;
+    left: 58px;
+  }
 }
 
 .mandatory-fields::before {
   content: "*";
   color: @text-color-likes;
+}
+
+.mandatory-fields::after {
+  content: "ПОЛЯ";
+
+  @media (min-width: @desktop-width) {
+    content: "ДЛЯ ЗАПОЛНЕНИЯ ПОЛЯ";
+  }
 }
