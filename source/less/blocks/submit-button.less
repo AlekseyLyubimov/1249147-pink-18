@@ -13,7 +13,7 @@
   height: 63px;
 
   position: absolute;
-  left: 50%;
+  left: 50vw;
   margin-left: -140px;
 
   border: none;
@@ -24,4 +24,10 @@
   color: @text-color-light;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    margin-left: -470px;
+
+    width: 300px;
+  }
 }
