@@ -21,6 +21,7 @@
   justify-content: space-around;
 
   @media (min-width: @tablet-width) {
+    order: -10;
     height: auto;
     padding-top: 72px;
     padding-bottom: 141px;
@@ -33,6 +34,8 @@
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    width: 100%;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -109,7 +112,7 @@
   @media (min-width: @tablet-width) {
     font-family: "OpenSans", "Arial", sans-serif;
     letter-spacing: 0;
-    font-size: 18px;
+    font-size: @font-size-bigger;
     width: 500px;
     margin-top: 60px;
     line-height: 1.7;
@@ -117,5 +120,58 @@
 
   @media (min-width: @desktop-width) {
     width: 600px;
+  }
+}
+
+.page-main__contest-info {
+  width: 100%;
+  background-color: @background-light;
+
+  @media (min-width: @tablet-width) {
+    order: -5;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: -10;
+  }
+}
+
+.page-main__contest-text {
+  font-family: "OpenSansLight", "Arial", sans-serif;
+  font-size: @font-size-normal;
+  line-height: 2.2;
+  text-align: center;
+
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  padding-top: 47px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-size-bigger;
+    width: 500px;
+    height: 200px;
+  }
+}
+
+.page-main__contest-text::after {
+  @media (min-width: @tablet-width) {
+    content: "Пожалуйста, заполните форму ниже:";
+  }
+}
+
+.page-main--form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: @background-light;
   }
 }
