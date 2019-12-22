@@ -35,8 +35,8 @@
     </header>
 
     <main class="page-main">
-      <div class="attention-grabber__background-image">
-        <div class="attention-grabber attention-grabber--index container">
+      <div class="attention-grabber">
+        <div class="attention-grabber__container attention-grabber__container--index container">
           <p class="attention-grabber__pitch-text">Взгляните на жизнь иначе!</p>
         </div>
       </div>
@@ -78,11 +78,22 @@
       </section>
 
       <section class="effect-time">
-        <h2 class="effect-time__header">Эффект на 24 часа!</h2>>
-        <p class="effect-time__text"></p>
-        <li class="effect-time__link">
-          <a href="placeholder.html">Узнать больше об исследовании</a>
-        </li>
+        <div class="effect-time__container container">
+          <div class="effect-time__timer-container">
+            <img class="effect-time__timer-outline" src="img/icon-timer.svg">
+            <svg class="effect-time__timer-bezel">
+              <circle>
+            </svg>
+            <p class="effect-time__timer-text">24</p>
+          </div>
+          <div class="effect-time__text-container">
+            <h2 class="effect-time__header"><span class="effect-time__header-first-line">Эффект</span> на 24 часа!</h2>
+            <p class="effect-time__text">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <p class="effect-time__link">
+              <a href="placeholder.html">Узнать больше об исследовании</a>
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="user-reviews">
@@ -90,6 +101,29 @@
           <cite class="user-reviews__reviewer-name">Николай Петров</cite>
           <p class="user-reviews__review-text"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
         </blockquote>
+
+        <div class="user-reviews__switches-container">
+          <div class="user-reviews__switch user-reviews__switch--active">
+            <svg class="user-reviews__circles">
+              <circle class="user-reviews__big-circle"></circle>
+              <circle class="user-reviews__small-circle"></circle>
+            </svg>
+          </div>
+          <div class="user-reviews__switch">
+            <svg class="user-reviews__circles">
+              <circle class="user-reviews__big-circle"></circle>
+              <circle class="user-reviews__small-circle"></circle>
+            </svg>
+          </div>
+          <div class="user-reviews__switch">
+            <svg class="user-reviews__circles">
+              <circle class="user-reviews__big-circle"></circle>
+              <circle class="user-reviews__small-circle"></circle>
+            </svg>
+          </div>
+        </div>
+
+        <div class="user-reviews__diagonal-cut"></div>
       </section>
 
       <section class="tariffs">
@@ -161,6 +195,28 @@
             </tr>
 
           </table>
+
+          <div class="tariffs__switches-container">
+            <div class="tariffs__switch">
+              <svg class="tariffs__circles">
+                <circle class="tariffs__big-circle"></circle>
+                <circle class="tariffs__small-circle"></circle>
+              </svg>
+            </div>
+            <div class="tariffs__switch  tariffs__switch--active">
+              <svg class="tariffs__circles">
+                <circle class="tariffs__big-circle"></circle>
+                <circle class="tariffs__small-circle"></circle>
+              </svg>
+            </div>
+            <div class="tariffs__switch">
+              <svg class="tariffs__circles">
+                <circle class="tariffs__big-circle"></circle>
+                <circle class="tariffs__small-circle"></circle>
+              </svg>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -179,6 +235,19 @@
             <h2 class="contacts__contact-type">Приезжайте в гости:</h2>
             <p class="contacts__contact-data">ул. Большая<br>Конюшенная, 19/8</p>
           </div>
+        </div>
+        <div class="contacts__bottom-triangle-container">
+          <div class="contacts__bottom-triangle contacts__bottom-triangle--left"></div>
+          <div class="contacts__bottom-triangle contacts__bottom-triangle--right"></div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="map__background">
+          <svg class="map__circles">
+            <circle class="map__white-circle"></circle>
+            <circle class="map__pink-circle"></circle>
+          </svg>
         </div>
       </section>
     </main>

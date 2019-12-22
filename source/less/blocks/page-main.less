@@ -24,7 +24,7 @@
     order: -10;
     height: auto;
     padding-top: 72px;
-    padding-bottom: 141px;
+    padding-bottom: 80px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: 1.5dppx) {
@@ -57,12 +57,13 @@
   width: 250px;
 
   @media (min-width: @tablet-width) {
-    font-size: 46px;
-    letter-spacing: 0.08ch;
+    font-size: 48px;
+    letter-spacing: 0.04ch;
+    line-height: 1.25;
 
-    width: 400px;
+    width: 500px;
     align-self: flex-start;
-    margin-top: 0;
+    margin-top: 0px;
     margin-bottom: 0;
     position: relative;
     left: 1px;
@@ -73,12 +74,14 @@
     position: relative;
     left: -6px;
     top: 0;
+    width: 800px;
   }
 }
 
 .page-main__incentive-container {
-  height: 184px;
+  height: 178px;
   box-sizing: border-box;
+  margin-top: -1px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 35px;
@@ -129,6 +132,7 @@
 
   @media (min-width: @tablet-width) {
     order: -5;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -153,7 +157,16 @@
   @media (min-width: @tablet-width) {
     font-size: @font-size-bigger;
     width: 500px;
-    height: 200px;
+    height: 220px;
+    padding-top: 92px;
+    letter-spacing: 0.03ch;
+    line-height: 1.7;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    letter-spacing: 0.05ch;
+    line-height: 1.6;
   }
 }
 
