@@ -32,7 +32,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/*.html", gulp,series("refresh_html", "reload_page"));
+  gulp.watch("source/*.html", gulp.series("refresh_html", "reload_page"));
 });
 
 gulp.task("refresh_html", function () {
