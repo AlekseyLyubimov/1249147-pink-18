@@ -40,11 +40,13 @@
 
     position: relative;
 
+    /* no idea why it doesn't work
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
+    */
   }
 }
 
@@ -125,5 +127,53 @@
 
   @media (min-width: @desktop-width) {
 
+  }
+}
+
+.achievements__achievement--left-top {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 58px;
+    top: 53px;
+  }
+}
+
+.achievements__achievement--left-bottom {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 58px;
+    bottom: 50px;
+  }
+}
+
+.achievements__achievement--center-top {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 373px;
+    top: 53px;
+  }
+}
+
+.achievements__achievement--center-bottom {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 373px;
+    bottom: 50px;
+  }
+}
+
+.achievements__achievement--right-top {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: -12px;
+    top: 53px;
+  }
+}
+
+.achievements__achievement--right-bottom {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: -12px;
+    bottom: 50px;
   }
 }

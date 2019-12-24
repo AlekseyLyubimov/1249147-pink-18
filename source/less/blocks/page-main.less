@@ -1,5 +1,6 @@
 .page-main {
   position: relative;
+  background-color: @background-light;
 }
 
 .page-main__identifier-comtainer {
@@ -41,9 +42,12 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
 
-    padding-top: 64px;
+    padding-top: 174px;
     padding-bottom: 102px;
     padding-left: 15px;
+
+    height: 394px;
+    margin-top: -110px;
   }
 }
 
@@ -79,19 +83,20 @@
 }
 
 .page-main__incentive-container {
-  height: 178px;
+  height: 185px;
   box-sizing: border-box;
   margin-top: -1px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 35px;
   padding-right: 35px;
-  padding-top: 30px;
+  padding-top: 32px;
   background-color: #ffffff;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     height: 225px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -176,7 +181,7 @@
   }
 }
 
-.page-main--form {
+.page-main__form-flex {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -185,6 +190,12 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: @background-light;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+
+    padding-bottom: 40px;
+    margin-bottom: -1px;
   }
 }

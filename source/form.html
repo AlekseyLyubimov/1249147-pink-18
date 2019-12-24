@@ -13,6 +13,7 @@
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="PINK">
           </picture>
         </a>
@@ -46,104 +47,120 @@
 
       <form id="contest" action="handler.php" method="post"></form>
 
-      <div class="personal-info">
-        <fieldset class="personal-info__fieldset">
-          <div class="personal-info__category">
-            <label for="last-name" class="personal-info__label">Фамилия:</label>
-            <input type="text" name="last-name" form="contest" required placeholder="Укажите фамилию *" class="personal-info__input-field">
-          </div>
-          <div class="personal-info__category">
-            <label for="irst-name" class="personal-info__label">Имя:</label>
-            <input type="text" name="first-name" form="contest" required placeholder="Введите ваше имя *" class="personal-info__input-field">
-          </div>
-          <div class="personal-info__category">
-            <label for="middle-name" class="personal-info__label">Отчество:</label>
-            <input type="text" name="middle-name" form="contest" placeholder="Ну и отчество тоже" class="personal-info__input-field">
-          </div>
-        </fieldset>
-      </div>
+      <div class="page-main__form-flex">
 
-      <div class="achievements">
-        <fieldset class="achievements__fieldset">
-          <div class="achievements__achievement">
-            <input type="checkbox" name="shark-selfie" class="achievements__input-field">
-            <label for="shark-selfie" class="achievements__label">Сделал селфи с акулой</label>
-          </div>
-          <div class="achievements__achievement">
-            <input type="checkbox" name="sunburn" class="achievements__input-field">
-            <label for="sunburn" class="achievements__label">Обгорел на пляже</label>
-          </div>
-          <div class="achievements__achievement">
-            <input type="checkbox" name="chuck-norris" class="achievements__input-field">
-            <label for="chuck-norris" class="achievements__label">Видел Чака Норриса</label>
-          </div>
-          <div class="achievements__achievement">
-            <input type="checkbox" name="souvenir-freighter" class="achievements__input-field">
-            <label for="souvenir-freighter" class="achievements__label">Накупил сувениров</label>
-          </div>
-          <div class="achievements__achievement">
-            <input type="checkbox" name="pisa-tower" class="achievements__input-field">
-            <label for="pisa-tower" class="achievements__label">Удержал башню</label>
-          </div>
-          <div class="achievements__achievement">
-            <input type="checkbox" name="hotel-thrasher" class="achievements__input-field">
-            <label for="hotel-thrasher" class="achievements__label">Разгромил отель</label>
-          </div>
-        </fieldset>
-      </div>
-
-      <div class="user-contacts">
-        <fieldset class="user-contacts__fieldset">
-          <p class="user-contacts__info">Контактная информация</p>
-          <div class="user-contacts__contact">
-            <label for="phone-number" class="user-contacts__label"> Номер телефона</label>
-            <input type="text" name="phone-number" form="contest" required placeholder="Номер, пожалуйста" class="user-contacts__input-field">
-          </div>
-          <div class="user-contacts__contact">
-            <label for="email" class="user-contacts__label">Адрес почты</label>
-            <input type="email" name="email" form="contest" placeholder="Введите почту *" class="user-contacts__input-field">
-          </div>
+        <div class="personal-info">
+          <fieldset class="personal-info__fieldset">
+            <div class="personal-info__category">
+              <label for="last-name" class="personal-info__label">Фамилия:</label>
+              <input type="text" name="last-name" form="contest" required placeholder="Укажите фамилию *" class="personal-info__input-field">
+            </div>
+            <div class="personal-info__category">
+              <label for="irst-name" class="personal-info__label">Имя:</label>
+              <input type="text" name="first-name" form="contest" required placeholder="Введите ваше имя *" class="personal-info__input-field">
+            </div>
+            <div class="personal-info__category">
+              <label for="middle-name" class="personal-info__label">Отчество:</label>
+              <input type="text" name="middle-name" form="contest" placeholder="Ну и отчество тоже" class="personal-info__input-field">
+            </div>
           </fieldset>
-      </div>
+        </div>
 
-      <div class="application-version">
-        <fieldset class="application-version__fieldset">
-          <p class="application-version__info">С каким приложением путешествовали?</p>
-          <input type="radio" id="ios-app" name="appversion" value="ios" class="application-version__input-field">
-          <label for="ios-app" class="application-version__label">Pink для iOS</label>
-          <input type="radio" id="android-app" name="appversion" value="android" class="application-version__input-field">
-          <label for="android-app" class="application-version__label">Pink на Android</label>
-          <input type="radio" id="win-app" name="appversion" value="windows" class="application-version__input-field">
-          <label for="win-app" class="application-version__label">Windows Phone</label>
-        </fieldset>
-      </div>
+        <div class="achievements">
+          <fieldset class="achievements__fieldset">
+            <div class="achievements__achievement achievements__achievement--left-top">
+              <input type="checkbox" name="shark-selfie" class="achievements__input-field">
+              <label for="shark-selfie" class="achievements__label">Сделал селфи с акулой</label>
+            </div>
+            <div class="achievements__achievement achievements__achievement--left-bottom">
+              <input type="checkbox" name="sunburn" class="achievements__input-field">
+              <label for="sunburn" class="achievements__label">Обгорел на пляже</label>
+            </div>
+            <div class="achievements__achievement achievements__achievement--center-top">
+              <input type="checkbox" name="chuck-norris" class="achievements__input-field">
+              <label for="chuck-norris" class="achievements__label">Видел Чака Норриса</label>
+            </div>
+            <div class="achievements__achievement achievements__achievement--center-bottom">
+              <input type="checkbox" name="souvenir-freighter" class="achievements__input-field">
+              <label for="souvenir-freighter" class="achievements__label">Накупил сувениров</label>
+            </div>
+            <div class="achievements__achievement achievements__achievement--right-top">
+              <input type="checkbox" name="pisa-tower" class="achievements__input-field">
+              <label for="pisa-tower" class="achievements__label">Удержал башню</label>
+            </div>
+            <div class="achievements__achievement achievements__achievement--right-bottom">
+              <input type="checkbox" name="hotel-thrasher" class="achievements__input-field">
+              <label for="hotel-thrasher" class="achievements__label">Разгромил отель</label>
+            </div>
+          </fieldset>
+        </div>
 
-      <div class="essay">
-        <fieldset class="essay__fieldset">
-          <label for="essay" class="essay__label">Опишите свои эмоции</label>
-          <textarea name="essay" form="contest" class="essay__text-area">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </fieldset>
-      </div>
+        <div class="user-contacts">
+          <fieldset class="user-contacts__fieldset">
+            <p class="user-contacts__info">Контактная информация</p>
+            <div class="user-contacts__contact">
+              <label for="phone-number" class="user-contacts__label"> Номер телефона</label>
+              <input type="text" name="phone-number" form="contest" required placeholder="Номер, пожалуйста" class="user-contacts__input-field">
+              <div class="user-contacts__icon-container">
+                <div class="user-contacts__icon user-contacts__icon--phone"></div>
+              </div>
+            </div>
+            <div class="user-contacts__contact">
+              <label for="email" class="user-contacts__label">Адрес почты</label>
+              <input type="email" name="email" form="contest" placeholder="Введите почту *" class="user-contacts__input-field">
+              <div class="user-contacts__icon-container">
+                <div class="user-contacts__icon user-contacts__icon--mail"></div>
+              </div>
+            </div>
+            </fieldset>
+        </div>
 
-      <div class="submit-button">
-        <input type="submit" value="ОТПРАВИТЬ ФОРМУ" form="contest"  class="submit-button__button">
-      </div>
+        <div class="application-version">
+          <fieldset class="application-version__fieldset">
+            <p class="application-version__info">С каким приложением путешествовали?</p>
+            <input type="radio" id="ios-app" name="appversion" value="ios" class="application-version__input-field">
+            <label for="ios-app" class="application-version__label">Pink для iOS</label>
+            <input type="radio" id="android-app" name="appversion" value="android" class="application-version__input-field">
+            <label for="android-app" class="application-version__label">Pink на Android</label>
+            <input type="radio" id="win-app" name="appversion" value="windows" class="application-version__input-field">
+            <label for="win-app" class="application-version__label">Windows Phone</label>
+          </fieldset>
+        </div>
 
-      <p class="mandatory-fields"> — ОБЯЗАТЕЛЬНЫЕ </p>
+        <div class="essay">
+          <fieldset class="essay__fieldset">
+            <label for="essay" class="essay__label">Опишите свои эмоции</label>
+            <textarea name="essay" form="contest" class="essay__text-area">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
+        </div>
+
+        <div class="submit-button">
+          <input type="submit" value="ОТПРАВИТЬ ФОРМУ" form="contest"  class="submit-button__button">
+        </div>
+
+        <p class="mandatory-fields"> — ОБЯЗАТЕЛЬНЫЕ </p>
+
+      </div>
 
     </main>
 
     <div class="page-footer__background">
       <footer class="page-footer container">
-        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+        </picture>
         <ul class="page-footer__social-links">
           <li class="page-footer__link-container">
+            <div class="page-footer__icon-container"></div>
             <a class="page-footer__link-twitter" href="https://twitter.com/pink"></a>
           </li>
           <li class="page-footer__link-container">
+            <div class="page-footer__icon-container"></div>
             <a class="page-footer__link-facebook" href="https://www.facebook.com/pink"></a>
           </li>
           <li class="page-footer__link-container">
+            <div class="page-footer__icon-container"></div>
             <a class="page-footer__link-youtube" href="https://www.youtube.com/channel/UCo1pShh6dtg"></a>
           </li>
         </ul>

@@ -13,6 +13,7 @@
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="PINK">
           </picture>
         </a>
@@ -98,8 +99,11 @@
 
       <section class="user-reviews">
         <blockquote class="user-reviews__review">
+          <div class="user-reviews__icon-quotes"></div>
           <cite class="user-reviews__reviewer-name">Николай Петров</cite>
+          <button class="user-reviews__navigation-button user-reviews__navigation-button--left"></button>
           <p class="user-reviews__review-text"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
+          <button class="user-reviews__navigation-button user-reviews__navigation-button--right"></button>
         </blockquote>
 
         <div class="user-reviews__switches-container">
@@ -136,7 +140,7 @@
                 <span class="tariffs__tariff-name">база</span><br>
                 <span class="tariffs__tariff-price">1,99 USD</span>
               </td>
-              <td class="tariffs__cell">
+              <td class="tariffs__cell tariffs__cell--hit">
                 <span class="tariffs__tariff-name">стандарт</span><br>
                 <span class="tariffs__tariff-price">3.99 USD</span>
               </td>
@@ -254,15 +258,21 @@
 
     <div class="page-footer__background page-footer--index">
       <footer class="page-footer container">
-        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+        </picture>
         <ul class="page-footer__social-links">
           <li class="page-footer__link-container">
+            <div class="page-footer__icon-container"></div>
             <a class="page-footer__link-twitter" href="https://twitter.com/pink"></a>
           </li>
           <li class="page-footer__link-container">
+            <div class="page-footer__icon-container"></div>
             <a class="page-footer__link-facebook" href="https://www.facebook.com/pink"></a>
           </li>
           <li class="page-footer__link-container">
+            <div class="page-footer__icon-container"></div>
             <a class="page-footer__link-youtube" href="https://www.youtube.com/channel/UCo1pShh6dtg"></a>
           </li>
         </ul>

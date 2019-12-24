@@ -139,6 +139,12 @@
   stroke-width: 0;
 }
 
+.user-reviews__switch {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .user-reviews__switch--active .user-reviews__big-circle {
   fill: @text-color-dark;
 }
@@ -167,5 +173,54 @@
 
   @media (min-width: @desktop-width) {
     height: 85px;
+  }
+}
+
+.user-reviews__icon-quotes {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 79px;
+    height: 63px;
+    background: url("../img/icon-quotes.svg");
+    filter: invert(100%) sepia(0%) saturate(1310%) hue-rotate(209deg) brightness(115%) contrast(87%);
+
+    position: absolute;
+    top: 68px;
+    left: 50%;
+    margin-left: -36px;
+
+  }
+}
+
+.user-reviews__navigation-button {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 23px;
+    height: 42px;
+    filter: invert(88%) sepia(16%) saturate(83%) hue-rotate(173deg) brightness(93%) contrast(76%);
+    border: none;
+
+    position: absolute;
+    top: 210px;
+  }
+}
+
+.user-reviews__navigation-button--left {
+  @media (min-width: @desktop-width) {
+    background: url("../img/icon-review-arrow-left.svg");
+    left: 50%;
+    margin-left: -470px;
+  }
+}
+
+.user-reviews__navigation-button--right {
+  @media (min-width: @desktop-width) {
+    background: url("../img/icon-review-arrow-right.svg");
+    right: 50%;
+    margin-right: -470px;
   }
 }

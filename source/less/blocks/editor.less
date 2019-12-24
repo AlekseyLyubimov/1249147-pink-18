@@ -1,6 +1,7 @@
 .editor {
   width: 100%;
   height: 757px;
+  margin-top: -7px;
   background-color: @background-light;
 
   @media (min-width: @tablet-width) {
@@ -10,6 +11,8 @@
 
   @media (min-width: @desktop-width) {
     height: 514px;
+    margin-top: -25px;
+    padding-bottom: 31px;
   }
 }
 
@@ -51,7 +54,7 @@
   }
 }
 
-.editor__icons {
+.editor__controls {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -69,68 +72,104 @@
     flex-direction: column;
     justify-content: space-between;
 
-    width: 25px;
-    height: 153px;
+    width: 275px;
 
     position: absolute;
-    right: 50%;
-    top: 65px;
+    right: 50vw;
+    top: 40px;
     margin: 0;
-    margin-right: -61px;
+    margin-right: -312px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 56px;
-    margin-right: -25px;
+    right: 60px;
+    top: 42px;
+    margin-right: 0;
 
-    height: 172px;
+    width: 410px;
+  }
+}
+
+.editor__control-group {
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    margin: 0;
+    height: 72px;
+    width: 275px;
+    border-bottom: 1px solid #dddfe0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
   }
 }
 
 .editor__icon {
-  width: 50px;
-  height: 50px;
+  @media (min-width: @tablet-width) {
+    filter: invert(22%) sepia(52%) saturate(4805%) hue-rotate(331deg) brightness(88%) contrast(86%);
+  }
+}
+
+.editor__icon--crop {
+  width: 48px;
+  height: 48px;
+  filter: invert(22%) sepia(52%) saturate(4805%) hue-rotate(331deg) brightness(88%) contrast(86%);
 
   @media (min-width: @tablet-width) {
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 0px;
+    top: 1px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
+    top: 0;
+    left: -1px;
   }
 }
 
 .editor__icon--fill {
   position: relative;
-  right: 5px;
+  left: -5px;
   top: 2px;
+  width: 50px;
+  height: 50px;
 
   @media (min-width: @tablet-width) {
-    right: -2px;
-    top: 5px;
+    width: 24px;
+    height: 24px;
+    left: 1px;
+    top: 2px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
 
     right: 0;
-    top: 4px;
+    top: 3px;
   }
 }
 
 .editor__icon--contrast {
   position: relative;
-  right: 2px;
+  width: 32px;
+  height: 32px;
+  left: -2px;
+  top: 7px;
 
   @media (min-width: @tablet-width) {
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
 
-    right: -7px;
-    top: 10px;
+    left: 6px;
+    top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -139,89 +178,196 @@
   }
 }
 
-.editor__post-button {
+.editor__button  {
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.14ch;
+  color: @background-light;
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  border: 3px solid @background-light;
+  border-radius: 100px;
+  align-self: center;
+  background-color: #00000000;
+
   box-sizing: border-box;
   width: 280px;
   text-align: center;
+  margin-right: -138px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    letter-spacing: -0.12ch;
+
+    width: 183px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+  }
+}
+
+.editor__button--post {
+
+  border: 3px solid @text-color-likes;
+  color: @text-color-likes;
 
   position: absolute;
   bottom: 110px;
   right: 50%;
 
-  margin-right: -140px;
-
-  font-family: "OpenSansBold", "Arial", sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.14ch;
-  color: @background-light;
-  text-decoration: none;
-  padding-top: 12px;
-  padding-bottom: 14px;
-  border: 3px solid @background-light;
-  border-radius: 100px;
-  align-self: center;
-
   @media (min-width: @tablet-width) {
-    width: 260px;
-    font-size: 18px;
-    letter-spacing: 0;
-
     bottom: 135px;
     margin-right: -295px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 21px;
-    letter-spacing: -0.12ch;
-
-    width: 183px;
-    padding-top: 9px;
-    padding-bottom: 13px;
-
+    margin-right: 0;
     bottom: 55px;
-    margin-right: -185px;
+    right: 285px;
   }
 }
 
-.editor__cansel-button {
-  box-sizing: border-box;
-  width: 280px;
-  text-align: center;
+.editor__button--cansel {
 
-  font-family: "OpenSansBold", "Arial", sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.14ch;
-  color: @background-light;
-  text-decoration: none;
-  padding-top: 12px;
-  padding-bottom: 14px;
-  border: 3px solid @background-light;
-  border-radius: 100px;
-  align-self: center;
+  border: 3px solid #dddfe0;
+  color: #dddfe0;
 
   position: absolute;
   bottom: 42px;
   right: 50%;
 
-  margin-right: -140px;
-
   @media (min-width: @tablet-width) {
-    width: 260px;
-    font-size: 18px;
-    letter-spacing: 0;
-
     bottom: 55px;
     margin-right: -295px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 21px;
-    letter-spacing: -0.12ch;
-
-    width: 183px;
-    padding-top: 9px;
-    padding-bottom: 13px;
-
     margin-right: -410px;
+  }
+}
+
+/* Furter lies slider styling */
+
+.editor__slider {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 240px; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  position: relative;
+  left: -2px;
+  top: 18px;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: -18px;
+    width: 202px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+    left: -28px;
+  }
+}
+
+.editor__slider::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.editor__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid @text-color-likes;
+  border-radius: 7px;
+  height: 14px;
+  width: 14px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+.editor__slider::-moz-range-thumb {
+  border: 2px solid @text-color-likes;
+  border-radius: 7px;
+  height: 14px;
+  width: 14px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.editor__slider::-ms-thumb {
+  border: 2px solid @text-color-likes;
+  border-radius: 7px;
+  height: 14px;
+  width: 14px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.editor__slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background:@text-color-dark;
+}
+
+.editor__slider:focus::-webkit-slider-runnable-track {
+  background: @text-color-dark;
+}
+
+.editor__slider::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: @text-color-dark;
+}
+
+.editor__slider::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+}
+.editor__slider::-ms-fill-lower {
+  background: @text-color-dark;
+}
+.editor__slider:focus::-ms-fill-lower {
+  background: @text-color-dark;
+}
+.editor__slider::-ms-fill-upper {
+  background: @text-color-dark;
+}
+.editor__slider:focus::-ms-fill-upper {
+  background: @text-color-dark;
+}
+
+
+
+
+
+
+.editor__slider--pdt {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+}
+
+.editor__slider--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
