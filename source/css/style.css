@@ -1461,11 +1461,11 @@ a {
     background-position-y: 15px;
   }
 }
-.page-footer__signature {
+.page-footer__signature a {
   padding-top: 15px;
 }
 @media (min-width: 660px) {
-  .page-footer__signature {
+  .page-footer__signature a {
     width: 130px;
     height: 40px;
     padding-top: 0;
@@ -1473,18 +1473,22 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative;
     right: 17px;
-    top: 4px;
+    top: -12px;
   }
 }
 @media (min-width: 960px) {
-  .page-footer__signature {
+  .page-footer__signature a {
     right: 34px;
-    top: -3px;
+    top: -18px;
   }
 }
 .page-footer__signature-text {
@@ -2184,6 +2188,7 @@ a {
   height: 33px;
   position: relative;
   top: 33px;
+  z-index: 10;
 }
 @media (min-width: 660px) {
   .contacts__bottom-triangle-container {
@@ -2369,7 +2374,7 @@ a {
 }
 @media (min-width: 660px) {
   .editor {
-    height: 511px;
+    height: 458px;
     padding-top: 58px;
   }
 }
@@ -3546,7 +3551,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  z-index: -10;
   width: 320px;
   height: 645px;
   margin-left: 50%;
