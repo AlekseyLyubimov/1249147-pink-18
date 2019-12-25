@@ -983,7 +983,6 @@ a {
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 3ch;
-  letter-spacing: 0;
   margin-top: 4px;
   margin-bottom: 10px;
 }
@@ -995,12 +994,54 @@ a {
 .featured-block__likes {
   margin-bottom: 12px;
   margin-top: 0;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 @media (min-width: 660px) {
   .featured-block__likes {
     position: absolute;
-    left: 26px;
     bottom: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (min-width: 960px) {
+  .featured-block__likes {
+    bottom: 13px;
+  }
+}
+@media (min-width: 660px) {
+  .featured-block:first-child .featured-block__likes {
+    bottom: 65px;
+    right: 25px;
+    width: 123px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 960px) {
+  .featured-block:first-child .featured-block__likes {
+    bottom: 43px;
+    right: 29px;
   }
 }
 .featured-block__likes-button {
@@ -1014,65 +1055,18 @@ a {
   text-align: center;
   height: 18px;
   width: 18px;
-  margin-left: 16px;
-  margin-right: 12px;
-  position: relative;
-  top: 2px;
-}
-@media (min-width: 660px) {
-  .featured-block__likes-button {
-    position: absolute;
-    left: 210px;
-    bottom: -5px;
-  }
+  margin: 0;
 }
 .featured-block__likes-text {
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   color: #d22856;
-  position: relative;
-  bottom: 2px;
+  padding-left: 16px;
 }
 @media (min-width: 660px) {
   .featured-block__likes-text {
-    bottom: -2px;
-  }
-}
-.featured-block__likes-number {
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #d22856;
-  position: relative;
-  bottom: 2px;
-}
-@media (min-width: 660px) {
-  .featured-block__likes-number {
-    bottom: -2px;
-  }
-}
-@media (min-width: 660px) {
-  .featured-block:first-child .featured-block__likes {
-    width: 150px;
-    left: 789px;
-    bottom: 40px;
-  }
-}
-@media (min-width: 660px) {
-  .featured-block:first-child .featured-block__likes-button {
-    left: 87px;
-    top: -1px;
-  }
-}
-@media (min-width: 660px) {
-  .featured-block:first-child .featured-block__likes-text {
-    bottom: 2px;
-  }
-}
-@media (min-width: 660px) {
-  .featured-block:first-child .featured-block__likes-number {
-    bottom: 2px;
+    padding: 0;
   }
 }
 .featured-block:last-child {
@@ -1170,7 +1164,7 @@ a {
     width: 500px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 0;
     position: relative;
     left: 1px;
@@ -2200,7 +2194,7 @@ a {
 @media (min-width: 960px) {
   .contacts__bottom-triangle-container {
     height: 100px;
-    top: 0px;
+    top: 0;
   }
 }
 .contacts__bottom-triangle {
@@ -2354,7 +2348,7 @@ a {
 .effect-time__timer-text {
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 95px;
-  letter-spacing: 0ch;
+  letter-spacing: 0;
   color: #d22856;
   position: absolute;
   left: 65px;
@@ -2371,33 +2365,62 @@ a {
   width: 100%;
   height: 757px;
   margin-top: -7px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 @media (min-width: 660px) {
   .editor {
     height: 511px;
-    padding-top: 2px;
+    padding-top: 58px;
   }
 }
 @media (min-width: 960px) {
   .editor {
-    height: 514px;
+    height: 545px;
     margin-top: -25px;
-    padding-bottom: 31px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
   }
 }
 .editor__container {
-  width: 100%;
-  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 280px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f2f2f2;
   text-align: center;
   position: relative;
 }
+@media (min-width: 660px) {
+  .editor__container {
+    width: 620px;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media (min-width: 960px) {
   .editor__container {
     width: 940px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 515px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
   }
 }
 .editor__picture {
@@ -2412,15 +2435,6 @@ a {
     width: 300px;
     height: 400px;
     margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 57px;
-    margin-left: -310px;
-  }
-}
-@media (min-width: 960px) {
-  .editor__picture {
-    margin-left: -390px;
   }
 }
 .editor__controls {
@@ -2452,18 +2466,17 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 275px;
-    position: absolute;
-    right: 50vw;
-    top: 40px;
     margin: 0;
-    margin-right: -312px;
+    margin-top: -20px;
+    margin-bottom: 45px;
+    right: 0;
   }
 }
 @media (min-width: 960px) {
   .editor__controls {
-    right: 60px;
-    top: 42px;
-    margin-right: 0;
+    right: 0;
+    top: 0;
+    margin-top: -15px;
     width: 410px;
   }
 }
@@ -2508,7 +2521,7 @@ a {
     width: 24px;
     height: 24px;
     position: relative;
-    left: 0px;
+    left: 0;
     top: 1px;
   }
 }
@@ -2588,6 +2601,8 @@ a {
     width: 260px;
     font-size: 18px;
     letter-spacing: 0;
+    margin: 0;
+    margin-right: 15px;
   }
 }
 @media (min-width: 960px) {
@@ -2608,15 +2623,14 @@ a {
 }
 @media (min-width: 660px) {
   .editor__button--post {
-    bottom: 135px;
-    margin-right: -295px;
+    position: initial;
   }
 }
 @media (min-width: 960px) {
   .editor__button--post {
-    margin-right: 0;
+    position: absolute;
+    right: 273px;
     bottom: 55px;
-    right: 285px;
   }
 }
 .editor__button--cansel {
@@ -2628,18 +2642,21 @@ a {
 }
 @media (min-width: 660px) {
   .editor__button--cansel {
-    bottom: 55px;
-    margin-right: -295px;
+    position: initial;
   }
 }
 @media (min-width: 960px) {
   .editor__button--cansel {
-    margin-right: -410px;
+    position: absolute;
+    right: 45px;
+    bottom: 55px;
   }
 }
 /* Furter lies slider styling */
 .editor__slider {
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   /* Hides the slider so that custom slider can be made */
   width: 240px;
   /* Specific width is required for Firefox. */
@@ -2662,16 +2679,9 @@ a {
     left: -28px;
   }
 }
-.editor__slider::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  /* Hides the slider so custom styles can be added */
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
 .editor__slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+          appearance: none;
   border: 2px solid #d22856;
   border-radius: 7px;
   height: 14px;
@@ -2718,7 +2728,9 @@ a {
   width: 100%;
   height: 2px;
   cursor: pointer;
+  /* Hides the slider so custom styles can be added */
   background: transparent;
+  border-color: transparent;
   color: transparent;
 }
 .editor__slider::-ms-fill-lower {
@@ -3075,8 +3087,8 @@ a {
     width: 940px;
     height: 162px;
     position: relative;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .user-contacts__info {
@@ -3172,7 +3184,7 @@ a {
     height: 60px;
     background-color: #e5e5e5;
     position: absolute;
-    right: 0px;
+    right: 0;
     top: -10px;
   }
 }
@@ -3464,7 +3476,7 @@ a {
 }
 @media (min-width: 960px) {
   .submit-button__button {
-    margin-left: 0px;
+    margin-left: 0;
     position: initial;
   }
 }

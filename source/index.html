@@ -17,7 +17,6 @@
             <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="PINK">
           </picture>
         </a>
-        <button class="page-header__menu-button"></button>
       </div>
       <ul class="page-header__menu page-header__menu--closed">
         <li class="page-header__menu-item">
@@ -30,7 +29,7 @@
           <a href="form.html">Конкурс</a>
         </li>
         <li class="page-header__menu-item">
-          <a href="https://htmlacademy.ru/">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </header>
@@ -59,8 +58,8 @@
 
       <section class="feature-block">
         <h2 class="feature-block__header">
-          <p class="feature-block__header-line container">Устали от серости мегаполиса?</p>
-          <p class="feature-block__header-line container">Нам есть, что вам предложить!</p>
+          <span class="feature-block__header-line container">Устали от серости мегаполиса?</span>
+          <span class="feature-block__header-line container">Нам есть, что вам предложить!</span>
         </h2>
         <ul class="feature-block__feature-list">
           <li class="feature-block__feature">
@@ -81,9 +80,9 @@
       <section class="effect-time">
         <div class="effect-time__container container">
           <div class="effect-time__timer-container">
-            <img class="effect-time__timer-outline" src="img/icon-timer.svg">
+            <img class="effect-time__timer-outline" src="img/icon-timer.svg" alt="TIMER">
             <svg class="effect-time__timer-bezel">
-              <circle>
+              <circle r=1></circle>
             </svg>
             <p class="effect-time__timer-text">24</p>
           </div>
@@ -109,20 +108,20 @@
         <div class="user-reviews__switches-container">
           <div class="user-reviews__switch user-reviews__switch--active">
             <svg class="user-reviews__circles">
-              <circle class="user-reviews__big-circle"></circle>
-              <circle class="user-reviews__small-circle"></circle>
+              <circle class="user-reviews__big-circle" r=1></circle>
+              <circle class="user-reviews__small-circle" r=1></circle>
             </svg>
           </div>
           <div class="user-reviews__switch">
             <svg class="user-reviews__circles">
-              <circle class="user-reviews__big-circle"></circle>
-              <circle class="user-reviews__small-circle"></circle>
+              <circle class="user-reviews__big-circle" r=1></circle>
+              <circle class="user-reviews__small-circle" r=1></circle>
             </svg>
           </div>
           <div class="user-reviews__switch">
             <svg class="user-reviews__circles">
-              <circle class="user-reviews__big-circle"></circle>
-              <circle class="user-reviews__small-circle"></circle>
+              <circle class="user-reviews__big-circle" r=1></circle>
+              <circle class="user-reviews__small-circle" r=1></circle>
             </svg>
           </div>
         </div>
@@ -131,8 +130,8 @@
       </section>
 
       <section class="tariffs">
-        <div clas="tariffs__table-container">
-          <table clas="tariffs__table">
+        <div class="tariffs__table-container">
+          <table class="tariffs__table">
 
             <tr class="tariffs__table-row">
               <td class="tariffs__cell tariffs__cell--empty"></td>
@@ -203,20 +202,20 @@
           <div class="tariffs__switches-container">
             <div class="tariffs__switch">
               <svg class="tariffs__circles">
-                <circle class="tariffs__big-circle"></circle>
-                <circle class="tariffs__small-circle"></circle>
+                <circle class="tariffs__big-circle" r=1></circle>
+                <circle class="tariffs__small-circle" r=1></circle>
               </svg>
             </div>
             <div class="tariffs__switch  tariffs__switch--active">
               <svg class="tariffs__circles">
-                <circle class="tariffs__big-circle"></circle>
-                <circle class="tariffs__small-circle"></circle>
+                <circle class="tariffs__big-circle" r=1></circle>
+                <circle class="tariffs__small-circle" r=1></circle>
               </svg>
             </div>
             <div class="tariffs__switch">
               <svg class="tariffs__circles">
-                <circle class="tariffs__big-circle"></circle>
-                <circle class="tariffs__small-circle"></circle>
+                <circle class="tariffs__big-circle" r=1></circle>
+                <circle class="tariffs__small-circle" r=1></circle>
               </svg>
             </div>
           </div>
@@ -249,8 +248,8 @@
       <section class="map">
         <div class="map__background">
           <svg class="map__circles">
-            <circle class="map__white-circle"></circle>
-            <circle class="map__pink-circle"></circle>
+            <circle class="map__white-circle" r=1></circle>
+            <circle class="map__pink-circle" r=1></circle>
           </svg>
         </div>
       </section>
@@ -277,8 +276,10 @@
           </li>
         </ul>
         <p class="page-footer__signature">
-          <span class="page-footer__signature-text">Разработано</span>
-          <img class="page-footer__signature-logo" src="img/logo-htmlacademy.svg">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="page-footer__signature-text">Разработано</span>
+            <img class="page-footer__signature-logo" src="img/logo-htmlacademy.svg" alt="HTMLAcademy">
+          </a>
         </p>
       </footer>
     </div>

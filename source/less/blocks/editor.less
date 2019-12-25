@@ -2,32 +2,51 @@
   width: 100%;
   height: 757px;
   margin-top: -7px;
-  background-color: @background-light;
+  background-color: @background-tinted;
 
   @media (min-width: @tablet-width) {
     height: 511px;
-    padding-top: 2px;
+    padding-top: 58px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 514px;
+    height: 545px;
     margin-top: -25px;
-    padding-bottom: 31px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: @background-light;
   }
 }
 
 .editor__container {
-  width: 100%;
-  height: 100%;
+  box-sizing: border-box;
+  width: 280px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: @background-tinted;
   text-align: center;
 
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+
   @media (min-width: @desktop-width) {
     width: 940px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 515px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
   }
 }
 
@@ -42,15 +61,6 @@
     width: 300px;
     height: 400px;
     margin: 0;
-
-    position: absolute;
-    left: 50%;
-    top: 57px;
-    margin-left: -310px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: -390px;
   }
 }
 
@@ -73,18 +83,17 @@
     justify-content: space-between;
 
     width: 275px;
-
-    position: absolute;
-    right: 50vw;
-    top: 40px;
     margin: 0;
-    margin-right: -312px;
+    margin-top: -20px;
+    margin-bottom: 45px;
+
+    right: 0;
   }
 
   @media (min-width: @desktop-width) {
-    right: 60px;
-    top: 42px;
-    margin-right: 0;
+    right: 0;
+    top: 0;
+    margin-top: -15px;
 
     width: 410px;
   }
@@ -122,7 +131,7 @@
     width: 24px;
     height: 24px;
     position: relative;
-    left: 0px;
+    left: 0;
     top: 1px;
   }
 
@@ -178,7 +187,7 @@
   }
 }
 
-.editor__button  {
+.editor__button {
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 16px;
   letter-spacing: 0.14ch;
@@ -200,6 +209,8 @@
     width: 260px;
     font-size: 18px;
     letter-spacing: 0;
+    margin: 0;
+    margin-right: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -222,14 +233,13 @@
   right: 50%;
 
   @media (min-width: @tablet-width) {
-    bottom: 135px;
-    margin-right: -295px;
+    position: initial;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 0;
+    position: absolute;
+    right: 273px;
     bottom: 55px;
-    right: 285px;
   }
 }
 
@@ -243,19 +253,20 @@
   right: 50%;
 
   @media (min-width: @tablet-width) {
-    bottom: 55px;
-    margin-right: -295px;
+    position: initial;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: -410px;
+    position: absolute;
+    right: 45px;
+    bottom: 55px;
   }
 }
 
 /* Furter lies slider styling */
 
 .editor__slider {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  appearance: none; /* Hides the slider so that custom slider can be made */
   width: 240px; /* Specific width is required for Firefox. */
   background: transparent; /* Otherwise white in Chrome */
   position: relative;
@@ -274,18 +285,8 @@
   }
 }
 
-.editor__slider::-ms-track {
-  width: 100%;
-  cursor: pointer;
-
-  /* Hides the slider so custom styles can be added */
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-
 .editor__slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   border: 2px solid @text-color-likes;
   border-radius: 7px;
   height: 14px;
@@ -319,7 +320,7 @@
   width: 100%;
   height: 2px;
   cursor: pointer;
-  background:@text-color-dark;
+  background: @text-color-dark;
 }
 
 .editor__slider:focus::-webkit-slider-runnable-track {
@@ -336,27 +337,30 @@
 .editor__slider::-ms-track {
   width: 100%;
   height: 2px;
+
   cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
   background: transparent;
+  border-color: transparent;
   color: transparent;
 }
+
 .editor__slider::-ms-fill-lower {
   background: @text-color-dark;
 }
+
 .editor__slider:focus::-ms-fill-lower {
   background: @text-color-dark;
 }
+
 .editor__slider::-ms-fill-upper {
   background: @text-color-dark;
 }
+
 .editor__slider:focus::-ms-fill-upper {
   background: @text-color-dark;
 }
-
-
-
-
-
 
 .editor__slider--pdt {
   display: none;
