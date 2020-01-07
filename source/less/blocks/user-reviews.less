@@ -1,13 +1,17 @@
 .user-reviews {
-  margin-top: 275px;
+  margin-top: 250px;
   box-sizing: border-box;
   width: 100%;
-  height: 375px;
+  height: 380px;
   background-color: @background-light;
+  padding-top: 5px;
+
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    position: relative;
+    padding-top: 10px;
+    height: 380px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,7 +25,7 @@
   margin-left: auto;
   text-align: center;
 
-  padding-top: 55px;
+  padding-top: 30px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -42,7 +46,7 @@
     font-size: 20px;
 
     position: absolute;
-    top: 202px;
+    top: 200px;
     left: 50%;
     width: 300px;
     margin-left: -150px;
@@ -60,7 +64,7 @@
     content: "25 лет, водитель трамвая";
 
     position: absolute;
-    top: 238px;
+    top: 237px;
     left: 50%;
 
     width: 300px;
@@ -81,7 +85,7 @@
   line-height: 2.2em;
   quotes: "«" "»";
 
-  padding-top: 3px;
+  padding-top: 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -93,5 +97,125 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 125px;
+  }
+}
+
+.user-reviews__switches-container {
+  box-sizing: border-box;
+  height: 12px;
+  width: 62px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 98px;
+  }
+}
+
+.user-reviews__circles {
+  height: 12px;
+  width: 12px;
+}
+
+.user-reviews__big-circle {
+  fill: @text-color-light;
+  stroke: @text-color-light;
+  cx: 50%;
+  cy: 50%;
+  r: 50%;
+  stroke-width: 0;
+}
+
+.user-reviews__small-circle {
+  fill: #bec2c7;
+  stroke: #bec2c7;
+  cx: 50%;
+  cy: 50%;
+  r: 23%;
+  stroke-width: 0;
+}
+
+.user-reviews__switch {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.user-reviews__switch--active .user-reviews__big-circle {
+  fill: @text-color-dark;
+}
+
+.user-reviews__switch--active .user-reviews__small-circle {
+  fill: @text-color-light;
+}
+
+.user-reviews__diagonal-cut {
+  margin: 0;
+
+  height: 25px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+
+  background: linear-gradient(to bottom right, transparent 50%, @background-tinted 50%);
+
+  @media (min-width: @tablet-width) {
+    height: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 85px;
+  }
+}
+
+.user-reviews__icon-quotes {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 79px;
+    height: 63px;
+    background: url("../img/icon-quotes.svg");
+    filter: invert(100%) sepia(0%) saturate(1310%) hue-rotate(209deg) brightness(115%) contrast(87%);
+
+    position: absolute;
+    top: 68px;
+    left: 50%;
+    margin-left: -36px;
+  }
+}
+
+.user-reviews__navigation-button {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 23px;
+    height: 42px;
+    filter: invert(88%) sepia(16%) saturate(83%) hue-rotate(173deg) brightness(93%) contrast(76%);
+    border: none;
+
+    position: absolute;
+    top: 210px;
+  }
+}
+
+.user-reviews__navigation-button--left {
+  @media (min-width: @desktop-width) {
+    background: url("../img/icon-review-arrow-left.svg");
+    left: 50%;
+    margin-left: -470px;
+  }
+}
+
+.user-reviews__navigation-button--right {
+  @media (min-width: @desktop-width) {
+    background: url("../img/icon-review-arrow-right.svg");
+    right: 50%;
+    margin-right: -470px;
   }
 }

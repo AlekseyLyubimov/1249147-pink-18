@@ -1,5 +1,6 @@
 .page-main {
   position: relative;
+  background-color: @background-light;
 }
 
 .page-main__identifier-comtainer {
@@ -22,9 +23,9 @@
 
   @media (min-width: @tablet-width) {
     order: -10;
-    height: auto;
+    height: 332px;
     padding-top: 72px;
-    padding-bottom: 141px;
+    padding-bottom: 80px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: 1.5dppx) {
@@ -41,9 +42,12 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
 
-    padding-top: 64px;
+    padding-top: 174px;
     padding-bottom: 102px;
     padding-left: 15px;
+
+    height: 394px;
+    margin-top: -110px;
   }
 }
 
@@ -57,10 +61,11 @@
   width: 250px;
 
   @media (min-width: @tablet-width) {
-    font-size: 46px;
-    letter-spacing: 0.08ch;
+    font-size: 48px;
+    letter-spacing: 0.04ch;
+    line-height: 1.25;
 
-    width: 400px;
+    width: 500px;
     align-self: flex-start;
     margin-top: 0;
     margin-bottom: 0;
@@ -73,22 +78,31 @@
     position: relative;
     left: -6px;
     top: 0;
+    width: 800px;
+  }
+}
+
+.page-main__page-identifier--photo {
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 }
 
 .page-main__incentive-container {
-  height: 184px;
+  height: 185px;
   box-sizing: border-box;
+  margin-top: -1px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 35px;
   padding-right: 35px;
-  padding-top: 30px;
+  padding-top: 32px;
   background-color: #ffffff;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     height: 225px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -129,6 +143,7 @@
 
   @media (min-width: @tablet-width) {
     order: -5;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -153,7 +168,16 @@
   @media (min-width: @tablet-width) {
     font-size: @font-size-bigger;
     width: 500px;
-    height: 200px;
+    height: 220px;
+    padding-top: 92px;
+    letter-spacing: 0.03ch;
+    line-height: 1.7;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    letter-spacing: 0.05ch;
+    line-height: 1.6;
   }
 }
 
@@ -163,7 +187,7 @@
   }
 }
 
-.page-main--form {
+.page-main__form-flex {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -172,6 +196,12 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: @background-light;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+
+    padding-bottom: 40px;
+    margin-bottom: -1px;
   }
 }

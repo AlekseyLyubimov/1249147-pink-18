@@ -1,0 +1,104 @@
+.map {
+  overflow: hidden;
+
+  width: 100%;
+  height: 200px;
+  margin-top: -33px;
+
+  @media (min-width: @tablet-width) {
+    height: 375px;
+    margin-top: -70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 505px;
+
+    position: relative;
+    bottom: 100px;
+    margin-bottom: -100px;
+  }
+}
+
+.map__background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  width: 320px;
+  height: 645px;
+
+  margin-left: 50%;
+  position: relative;
+  left: -160px;
+  top: -445px;
+
+
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    width: 700px;
+    height: 848px;
+
+    left: -350px;
+    top: -350px;
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-tablet@2x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    width: 1200px;
+    height: 976px;
+
+    left: -600px;
+    top: -275px;
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+  }
+}
+
+.map__circles {
+  height: 36px;
+  width: 36px;
+  margin-left: 50%;
+  position: relative;
+  top: 540px;
+  right: 18px;
+
+  @media (min-width: @tablet-width) {
+    top: 540px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 540px;
+  }
+}
+
+.map__white-circle {
+  fill: @text-color-light;
+  stroke: @text-color-light;
+  cx: 50%;
+  cy: 50%;
+  r: 50%;
+  stroke-width: 0;
+}
+
+.map__pink-circle {
+  fill: @text-color-likes;
+  stroke: @text-color-likes;
+  cx: 50%;
+  cy: 50%;
+  r: 22%;
+  stroke-width: 0;
+}

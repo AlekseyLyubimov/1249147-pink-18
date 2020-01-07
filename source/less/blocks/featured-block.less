@@ -2,16 +2,23 @@
   box-sizing: border-box;
   width: 280px;
   background-color: @background-tinted;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   text-align: left;
   padding-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
 
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+
+  position: relative;
+
   @media (min-width: @tablet-width) {
     height: 455px;
     width: 300px;
-    position: relative;
+    margin-bottom: 21px;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,6 +86,36 @@
   }
 }
 
+.featured-block__image-container--panoramic::before {
+  content: "ПАНОРАМА ДНЯ";
+  display: block;
+  z-index: 10;
+  box-sizing: border-box;
+  height: 36px;
+  width: 140px;
+
+  background-color: @text-color-likes;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 8px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: @font-size-smaller;
+  line-height: 3ch;
+  letter-spacing: 0.07ch;
+  color: @text-color-light;
+
+  @media (min-width: @tablet-width) {
+    top: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 55px;
+  }
+}
+
 .featured-block__image-container--panoramic .featured-block__image {
   width: 100vw;
   position: relative;
@@ -97,7 +134,7 @@
 }
 
 .featured-block__featured-text {
-  margin-top: 15px;
+  margin-top: 16px;
   margin-left: 18px;
   margin-bottom: 0;
   margin-right: 18px;
@@ -105,6 +142,14 @@
   @media (min-width: @tablet-width) {
     margin-top: 26px;
     margin-left: 27px;
+  }
+}
+
+.featured-block:first-child .featured-block__featured-text {
+  @media (max-width: @tablet-width) {
+    overflow: hidden;
+    height: 120px;
+    margin-bottom: 11px;
   }
 }
 
@@ -132,7 +177,6 @@
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: @font-size-normal;
   line-height: 3ch;
-  letter-spacing: 0;
   margin-top: 4px;
   margin-bottom: 10px;
 
@@ -143,17 +187,54 @@
 
 .featured-block__likes {
   margin-bottom: 12px;
-  margin-top: 0;
+  margin-top: auto;
+  padding-left: 15px;
+
+  justify-self: flex-end;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    left: 26px;
     bottom: 15px;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    padding-left: 28px;
+    padding-right: 28px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 13px;
+  }
+}
+
+.featured-block:first-child .featured-block__likes {
+  @media (min-width: @tablet-width) {
+
+    bottom: 65px;
+    right: 25px;
+
+    width: 123px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 43px;
+    right: 29px;
   }
 }
 
 .featured-block__likes-button {
   background-image: url("../img/icon-heart.svg");
+  filter: invert(20%) sepia(96%) saturate(1854%) hue-rotate(323deg) brightness(105%) contrast(94%);
   background-color: #00000000;
   background-repeat: no-repeat;
   background-position: center;
@@ -161,16 +242,7 @@
   text-align: center;
   height: 18px;
   width: 18px;
-  margin-left: 16px;
-  margin-right: 12px;
-  position: relative;
-  top: 2px;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    left: 210px;
-    bottom: -5px;
-  }
+  margin: 0;
 }
 
 .featured-block__likes-text {
@@ -178,51 +250,10 @@
   font-size: @font-size-smaller;
   text-transform: uppercase;
   color: @text-color-likes;
-  position: relative;
-  bottom: 2px;
+  padding-left: 16px;
 
   @media (min-width: @tablet-width) {
-    bottom: -2px;
-  }
-}
-
-.featured-block__likes-number {
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: @font-size-smaller;
-  text-transform: uppercase;
-  color: @text-color-likes;
-  position: relative;
-  bottom: 2px;
-
-  @media (min-width: @tablet-width) {
-    bottom: -2px;
-  }
-}
-
-.featured-block:first-child .featured-block__likes {
-  @media (min-width: @tablet-width) {
-    width: 150px;
-    left: 789px;
-    bottom: 40px;
-  }
-}
-
-.featured-block:first-child .featured-block__likes-button {
-  @media (min-width: @tablet-width) {
-    left: 87px;
-    top: -1px;
-  }
-}
-
-.featured-block:first-child .featured-block__likes-text {
-  @media (min-width: @tablet-width) {
-    bottom: 2px;
-  }
-}
-
-.featured-block:first-child .featured-block__likes-number {
-  @media (min-width: @tablet-width) {
-    bottom: 2px;
+    padding: 0;
   }
 }
 

@@ -1,16 +1,19 @@
 .achievements {
   box-sizing: border-box;
   width: 100%;
+  padding-top: 35px;
   background-color: @background-tinted;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     background-color: @background-light;
+    margin-top: -1px;
+    padding-top: 55px;
   }
 }
 
 .achievements__fieldset {
   box-sizing: border-box;
-  height: 604px;
+  height: 565px;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -18,48 +21,81 @@
   padding: 0;
   border: none;
 
+  @media (min-width: @tablet-width) {
+    border: 2px solid #e6e6e6;
+    height: 555px;
+    width: 620px;
+    padding-left: 58px;
+    padding-right: 58px;
+    margin-bottom: 10px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 940px;
-    height: 229px;
-    padding-right: 60px;
-    padding-left: 60px;
-
-    display: flex;
-    flex-direction: row;
+    height: 232px;
+    padding-right: 58px;
+    padding-left: 58px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     position: relative;
+
+    /* no idea why it doesn't work
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    */
   }
 }
 
-.achievements__info {
+.achievements__fieldset::before {
+
+  content: "Ваши безбашенные достижения в путешествии";
+
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: @font-size-normal;
   color: @text-color-likes;
   text-transform: uppercase;
   text-align: center;
 
+  display: block;
+
   box-sizing: border-box;
   width: 220px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @background-light;
+    width: 440px;
+
+    position: relative;
+    bottom: 12px;
+
+    margin-bottom: 32px;
+  }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: -30px;
+    top: -10px;
     left: 50%;
-    margin-left: -110px;
+    margin-left: -220px;
+    height: 30px;
+    margin-bottom: 0;
   }
 }
 
 .achievements__achievement {
   box-sizing: border-box;
   height: 82px;
+  flex-grow: 0;
 
   @media (min-width: @desktop-width) {
-    flex-grow: 0;
-    width: 200px;
-    margin: 0;
-    padding: 0;
+    height: auto;
+    width: 280px;
   }
 }
 
@@ -79,7 +115,61 @@
 
   vertical-align: top;
   position: relative;
-  top: 5px;
+  top: 6px;
+  right: 4px;
 
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 7px;
+    right: 14px;
+  }
+}
+
+.achievements__achievement--left-top {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 58px;
+    top: 53px;
+  }
+}
+
+.achievements__achievement--left-bottom {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 58px;
+    bottom: 50px;
+  }
+}
+
+.achievements__achievement--center-top {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 373px;
+    top: 53px;
+  }
+}
+
+.achievements__achievement--center-bottom {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 373px;
+    bottom: 50px;
+  }
+}
+
+.achievements__achievement--right-top {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: -12px;
+    top: 53px;
+  }
+}
+
+.achievements__achievement--right-bottom {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: -12px;
+    bottom: 50px;
+  }
 }
