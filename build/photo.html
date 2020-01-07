@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__top-block container">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="PINK">
+          </picture>
+        </a>
+      </div>
+      <ul class="page-header__menu page-header__menu--closed">
+        <li class="page-header__menu-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="page-header__menu-item">
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__identifier-comtainer">
+        <h2 class="page-main__page-identifier page-main__page-identifier--photo">Фотографии пользователей</h2>
+      </div>
+      <div class="page-main__incentive-container">
+        <p class="page-main__incentive-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+
+      <div class="featured">
+        <section class="featured-container container">
+
+          <div class="featured-block">
+            <div class="featured-block__image-container featured-block__image-container--panoramic">
+              <a href="placeholder.html">
+                <picture>
+                  <source media="(min-width: 960px) and (min-resolution: 1.5dppx)" srcset="img/panorama-desktop@2x.jpg">
+                  <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+                  <source media="(min-width: 660px) and (min-resolution: 1.5dppx)" srcset="img/panorama-tablet@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+                  <source media="(min-resolution: 1.5dppx)" srcset="img/panorama-mobile@2x.jpg">
+                  <img  class="featured-block__image" src="img/panorama-mobile@1x.jpg" alt="panoramic-image">
+                </picture>
+              </a>
+            </div>
+            <blockquote class="featured-block__featured-text">
+              <cite class="featured-block__authors-name">
+                Анна
+              </cite>
+              <span class="featured-block__time-since-posted">(5 минут назад)</span>
+              <p class="featured-block__authors-commentary">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
+            </blockquote>
+            <p class="featured-block__likes">
+              <button class="featured-block__likes-button featured-block__likes-button--not-pressed"></button>
+              <span class="featured-block__likes-text">Нравится: 215</span>
+            </p>
+          </div>
+
+          <div class="featured-block">
+            <div class="featured-block__image-container">
+              <a href="placeholder.html">
+                <picture>
+                  <source media="(min-width: 960px) and (min-resolution: 1.5dppx)" srcset="img/photo-car-desktop@2x.jpg">
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+                  <source media="(min-width: 660px) and (min-resolution: 1.5dppx)" srcset="img/photo-car-tablet@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+                  <source media="(min-resolution: 1.5dppx)" srcset="img/photo-car-mobile@2x.jpg">
+                  <img  class="featured-block__image" src="img/photo-car-mobile@1x.jpg" alt="car">
+                </picture>
+              </a>
+            </div>
+            <blockquote class="featured-block__featured-text">
+              <cite class="featured-block__authors-name">
+                Левон
+              </cite>
+              <span class="featured-block__time-since-posted">(5 часов назад)</span>
+              <p class="featured-block__authors-commentary">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            </blockquote>
+            <p class="featured-block__likes">
+              <button class="featured-block__likes-button featured-block__likes-button--not-pressed"></button>
+              <span class="featured-block__likes-text">Нравится: 356</span>
+            </p>
+          </div>
+
+          <div class="featured-block">
+            <div class="featured-block__image-container">
+              <a href="placeholder.html">
+                <picture>
+                  <source media="(min-width: 960px) and (min-resolution: 1.5dppx)" srcset="img/photo-drumset-desktop@2x.jpg">
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                  <source media="(min-width: 660px) and (min-resolution: 1.5dppx)" srcset="img/photo-drumset-tablet@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                  <source media="(min-resolution: 1.5dppx)" srcset="img/photo-drumset-mobile@2x.jpg">
+                  <img  class="featured-block__image" src="img/photo-drumset-mobile@1x.jpg" alt="drumset">
+                </picture>
+              </a>
+            </div>
+            <blockquote class="featured-block__featured-text">
+              <cite class="featured-block__authors-name">
+                Антон
+              </cite>
+              <span class="featured-block__time-since-posted">(12 часов назад)</span>
+              <p class="featured-block__authors-commentary">Соседи будут рады!</p>
+            </blockquote>
+            <p class="featured-block__likes">
+              <button class="featured-block__likes-button featured-block__likes-button--not-pressed"></button>
+              <span class="featured-block__likes-text">Нравится: 666</span>
+            </p>
+          </div>
+
+          <div class="featured-block">
+            <div class="featured-block__image-container">
+              <a href="placeholder.html">
+                <picture>
+                  <source media="(min-width: 960px) and (min-resolution: 1.5dppx)" srcset="img/photo-window-desktop@2x.jpg">
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+                  <source media="(min-width: 660px) and (min-resolution: 1.5dppx)" srcset="img/photo-window-tablet@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                  <source media="(min-resolution: 1.5dppx)" srcset="img/photo-window-mobile@2x.jpg">
+                  <img  class="featured-block__image" src="img/photo-window-mobile@1x.jpg" alt="window">
+                </picture>
+              </a>
+            </div>
+            <blockquote class="featured-block__featured-text">
+              <cite class="featured-block__authors-name">
+                Борис
+              </cite>
+              <span class="featured-block__time-since-posted">(20 часов назад)</span>
+              <p class="featured-block__authors-commentary">Здесь могла быть ваша цитата о великом и вечном.</p>
+            </blockquote>
+            <p class="featured-block__likes">
+              <button class="featured-block__likes-button featured-block__likes-button--not-pressed"></button>
+              <span class="featured-block__likes-text">Нравится: 215</span>
+            </p>
+          </div>
+
+          <div class="featured-block">
+            <div class="featured-block__image-container">
+              <a href="placeholder.html">
+                <picture>
+                  <source media="(min-width: 960px) and (min-resolution: 1.5dppx)" srcset="img/photo-fair-desktop@2x.jpg">
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+                  <source media="(min-width: 660px) and (min-resolution: 1.5dppx)" srcset="img/photo-fair-tablet@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                  <source media="(min-resolution: 1.5dppx)" srcset="img/photo-fair-mobile@2x.jpg">
+                  <img  class="featured-block__image" src="img/photo-fair-mobile@1x.jpg" alt="fair">
+                </picture>
+              </a>
+            </div>
+            <blockquote class="featured-block__featured-text">
+              <cite class="featured-block__authors-name">
+                Сергей
+              </cite>
+              <span class="featured-block__time-since-posted">(25 часов назад)</span>
+              <p class="featured-block__authors-commentary">Самая кубанская в мире!</p>
+            </blockquote>
+            <p class="featured-block__likes">
+              <button class="featured-block__likes-button featured-block__likes-button--not-pressed"></button>
+              <span class="featured-block__likes-text">Нравится: 4</span>
+            </p>
+          </div>
+
+          <div class="featured-block">
+            <div class="featured-block__image-container">
+              <a href="placeholder.html">
+                <picture>
+                  <source media="(min-width: 960px) and (min-resolution: 1.5dppx)" srcset="img/photo-pov-desktop@2x.jpg">
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+                  <source media="(min-width: 660px) and (min-resolution: 1.5dppx)" srcset="img/photo-pov-tablet@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                  <source media="(min-resolution: 1.5dppx)" srcset="img/photo-pov-mobile@2x.jpg">
+                  <img  class="featured-block__image" src="img/photo-pov-mobile@1x.jpg" alt="pov">
+                </picture>
+              </a>
+            </div>
+            <blockquote class="featured-block__featured-text">
+              <cite class="featured-block__authors-name">
+                Максим
+              </cite>
+              <span class="featured-block__time-since-posted">(40 часов назад)</span>
+              <p class="featured-block__authors-commentary">А где снег-то?</p>
+            </blockquote>
+            <p class="featured-block__likes">
+              <button class="featured-block__likes-button featured-block__likes-button--not-pressed"></button>
+              <span class="featured-block__likes-text">Нравится: 150</span>
+            </p>
+          </div>
+
+          <div class="featured-block">
+            <div class="featured-block__image-container">
+              <a href="placeholder.html">
+                <picture>
+                  <source media="(min-width: 960px) and (min-resolution: 1.5dppx)" srcset="img/photo-wing-desktop@2x.jpg">
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+                  <source media="(min-width: 660px) and (min-resolution: 1.5dppx)" srcset="img/photo-wing-tablet@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                  <source media="(min-resolution: 1.5dppx)" srcset="img/photo-wing-mobile@2x.jpg">
+                  <img  class="featured-block__image" src="img/photo-wing-mobile@1x.jpg" alt="wing">
+                </picture>
+              </a>
+            </div>
+            <blockquote class="featured-block__featured-text">
+              <cite class="featured-block__authors-name">
+                Надежда
+              </cite>
+              <span class="featured-block__time-since-posted">(45 часов назад)</span>
+              <p class="featured-block__authors-commentary">Всем GM и взаимные лайки</p>
+            </blockquote>
+            <p class="featured-block__likes">
+              <button class="featured-block__likes-button featured-block__likes-button--not-pressed"></button>
+              <span class="featured-block__likes-text">Нравится: 2560</span>
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="page-main__incentive-container">
+        <p class="page-main__incentive-text">Затмите их всех!<br>Выкладывайте всё, что накопилось в телефоне!</p>
+      </div>
+
+      <section class="editor">
+        <div class="editor__container">
+          <picture>
+            <source media="(min-width: 960px) and (min-resolution: 1.5dppx)" srcset="img/photo-road-desktop@2x.jpg">
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+            <source media="(min-width: 660px) and (min-resolution: 1.5dppx)" srcset="img/photo-road-tablet@2x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+            <source media="(min-resolution: 1.5dppx)" srcset="img/photo-road-mobile@2x.jpg">
+            <img  class="editor__picture" src="img/photo-road-mobile@1x.jpg" alt="road">
+          </picture>
+
+          <div class="editor__controls">
+            <div class="editor__control-group">
+              <img class="editor__icon editor__icon--crop" src="img/icon-editor-crop.svg" alt="crop">
+              <input type="range" class="editor__slider editor__slider--pdt">
+            </div>
+            <div class="editor__control-group">
+              <img class="editor__icon editor__icon--fill" src="img/icon-editor-fill.svg" alt="fill">
+              <input type="range" class="editor__slider editor__slider--pdt">
+            </div>
+            <div class="editor__control-group">
+              <img class="editor__icon editor__icon--contrast" src="img/icon-editor-contrast.svg" alt="contrast">
+              <input type="range" class="editor__slider editor__slider--pdt">
+            </div>
+          </div>
+
+          <input type="range" class="editor__slider editor__slider--mobile">
+
+          <button class="editor__button editor__button--post">Запостить</button>
+          <button class="editor__button editor__button--cansel">Отмена</button>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="page-footer__background">
+      <footer class="page-footer container">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+        </picture>
+        <ul class="page-footer__social-links">
+          <li class="page-footer__link-container">
+            <a class="page-footer__link page-footer__link--twitter" href="https://twitter.com/pink">
+              <div class="page-footer__icon-container"></div>
+            </a>
+          </li>
+          <li class="page-footer__link-container">
+            <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/pink">
+              <div class="page-footer__icon-container"></div>
+            </a>
+          </li>
+          <li class="page-footer__link-container">
+            <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/channel/UCo1pShh6dtg">
+              <div class="page-footer__icon-container"></div>
+            </a>
+          </li>
+        </ul>
+        <p class="page-footer__signature">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="page-footer__signature-text">Разработано</span>
+            <img class="page-footer__signature-logo" src="img/logo-htmlacademy.svg" alt="HTMLAcademy">
+          </a>
+        </p>
+      </footer>
+    </div>
+
+  </body>
+</html>
